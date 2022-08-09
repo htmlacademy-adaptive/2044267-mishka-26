@@ -173,62 +173,48 @@
     </footer>
     <div class="modal-container modal">
       <div class="modal__modal modal__modal--shop">
-        <section class="modal__content">
-          <h2 class="modal__title">Добавить в корзину</h2>
-          <p>Выберите размер:</p>
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p>Выберите размер:</p>
+        <form class="form" action="/action_page.php" method="post">
           <ul class="modal__list">
             <li class="modal__item">
-              <form class="form" action="#" method="post">
-                <fieldset class="form__fieldset">
-                  <label class="form__label form__label--text">
-                    <input
-                      class="form__control form__control--text"
-                      type="submit"
-                      name="size"
-                      value="S"
-                    />
-                    S
-                  </label>
-                </fieldset>
-              </form>
+              <fieldset class="form__fieldset">
+                <input
+                  class="form__control form__control--text"
+                  type="submit"
+                  name="size"
+                  value="S"
+                />
+                <!-- <label class="form__label form__label--text">S</label> -->
+              </fieldset>
             </li>
             <li class="modal__item">
-              <form class="form" action="#" method="post">
-                <fieldset class="form__fieldset">
-                  <label class="form__label form__label--text">
-                    <input
-                      class="form__control form__control--text"
-                      type="submit"
-                      name="size"
-                      value="M"
-                    />
-                    M
-                  </label>
-                </fieldset>
-              </form>
+              <fieldset class="form__fieldset">
+                <input
+                  class="form__control form__control--text"
+                  type="submit"
+                  name="size"
+                  value="M"
+                />
+                <!-- <label class="form__label form__label--text">M</label> -->
+              </fieldset>
             </li>
             <li class="modal__item">
-              <form class="form" action="#" method="post">
-                <fieldset class="form__fieldset">
-                  <label class="form__label form__label--text">
-                    <input
-                      class="form__control form__control--text"
-                      type="submit"
-                      name="size"
-                      value="L"
-                    />
-                    L
-                  </label>
-                </fieldset>
-              </form>
+              <fieldset class="form__fieldset">
+                <input
+                  class="form__control form__control--text"
+                  type="submit"
+                  name="size"
+                  value="L"
+                />
+                <!-- <label class="form__label form__label--text">L</label> -->
+              </fieldset>
             </li>
           </ul>
-          <form class="form-button" action="#" method="post">
-            <button class="modal__modal button">
-              <span class="visually-hidden">Добавить</span>
-            </button>
-          </form>
-        </section>
+          <button class="modal__modal button">
+            <span class="visually-hidden">Добавить</span>
+          </button>
+        </form>
       </div>
     </div>
   </body>

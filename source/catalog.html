@@ -45,7 +45,7 @@
             <li class="products__item">
               <a class="products__card" href="#">
                 <img
-                  class="card__img"
+                  class="products__image"
                   width="260"
                   height="195"
                   src="img/bunny.svg"
@@ -62,7 +62,7 @@
             <li class="products__item">
               <a class="products__card" href="#">
                 <img
-                  class="card__img"
+                  class="products__image"
                   width="260"
                   height="195"
                   src="img/basket.svg"
@@ -79,7 +79,7 @@
             <li class="products__item">
               <a class="products__card" href="#">
                 <img
-                  class="card__img"
+                  class="products__image"
                   width="260"
                   height="195"
                   src="img/toys.svg"
@@ -148,64 +148,96 @@
         </a>
       </div>
     </footer>
-    <div class="modal-container modal">
-      <div class="modal__modal modal__modal--shop">
-        <section class="modal__content">
-          <h2 class="modal__title">Добавить в корзину</h2>
-          <p>Выберите размер:</p>
-          <ul class="modal__list">
-            <li class="modal__item">
-              <form class="form" action="#" method="post">
-                <fieldset class="form__fieldset">
-                  <label class="form__label form__label--text">
-                    <input
-                      class="form__control form__control--text"
-                      type="submit"
-                      name="size"
-                      value="S"
-                    />
-                    S
-                  </label>
-                </fieldset>
-              </form>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__contacts contacts">
+          <h2 class="contacts__title">Контакты</h2>
+          <p class="contacts__email">
+            e-mail:
+            <a
+              class="contacts__email contacts__email--address"
+              href="mailto:info@mimimishkashop.ru"
+              >info@mimimishkashop.ru</a
+            >
+          </p>
+          <p class="contacts__text">
+            адрес: г. Санкт-Петербург<br />
+            ул. Большая Конюшенная<br />
+            д. 19/8, офис 101
+          </p>
+          <a class="contacts__write-us button" href="#">Напишите нам</a>
+        </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">Вконтакте</a>
             </li>
-            <li class="modal__item">
-              <form class="form" action="#" method="post">
-                <fieldset class="form__fieldset">
-                  <label class="form__label form__label--text">
-                    <input
-                      class="form__control form__control--text"
-                      type="submit"
-                      name="size"
-                      value="M"
-                    />
-                    M
-                  </label>
-                </fieldset>
-              </form>
+            <li class="social__item">
+              <a class="social__link social__link--yt" href="#">Ютуб</a>
             </li>
-            <li class="modal__item">
-              <form class="form" action="#" method="post">
-                <fieldset class="form__fieldset">
-                  <label class="form__label form__label--text">
-                    <input
-                      class="form__control form__control--text"
-                      type="submit"
-                      name="size"
-                      value="L"
-                    />
-                    L
-                  </label>
-                </fieldset>
-              </form>
+            <li class="social__item">
+              <a class="social__link social__link--tg" href="#">Телеграм</a>
             </li>
           </ul>
-          <form class="form-button" action="#" method="post">
-            <button class="modal__modal button">
-              <span class="visually-hidden">Добавить</span>
-            </button>
-          </form>
-        </section>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru">
+            <img
+              class="main-footer__logo-image"
+              src="img/htmlacademy-logo.svg"
+              width="27"
+              height="35"
+              alt="HTML-academy"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-container modal">
+      <div class="modal__modal modal__modal--shop">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p>Выберите размер:</p>
+        <form class="form" action="/action_page.php" method="post">
+          <ul class="modal__list">
+            <li class="modal__item">
+              <fieldset class="form__fieldset">
+                <input
+                  class="form__control form__control--text"
+                  type="submit"
+                  name="size"
+                  value="S"
+                />
+                <!-- <label class="form__label form__label--text">S</label> -->
+              </fieldset>
+            </li>
+            <li class="modal__item">
+              <fieldset class="form__fieldset">
+                <input
+                  class="form__control form__control--text"
+                  type="submit"
+                  name="size"
+                  value="M"
+                />
+                <!-- <label class="form__label form__label--text">M</label> -->
+              </fieldset>
+            </li>
+            <li class="modal__item">
+              <fieldset class="form__fieldset">
+                <input
+                  class="form__control form__control--text"
+                  type="submit"
+                  name="size"
+                  value="L"
+                />
+                <!-- <label class="form__label form__label--text">L</label> -->
+              </fieldset>
+            </li>
+          </ul>
+          <button class="modal__modal button">
+            <span class="visually-hidden">Добавить</span>
+          </button>
+        </form>
       </div>
     </div>
   </body>
