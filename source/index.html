@@ -1,179 +1,235 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<head>
-  <meta charset="utf-8" />
-  <title>HTML Academy: Мишка</title>
-</head>
-<body class="page__body">
-	<header class="main-header">
-		<a class="main-header__logo"></a>
-      <img class="main-header__logo-image"
-           src="img/mishka-logo.svg"
-           width="86"
-           height="35"
-           alt="Мишка" />
-           <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-			<div class="main-nav__wrapper">
-				<ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#"> Каталог товаров</a>
-          </li>
-					<li class="site-list__item">
-            <a class="site-list__link" href="#">Вязание на заказ</a>
-          </li>
-					<li class="site-list__item">
-            <a class="site-list__link" href="#">Поиск по сайту</a>
-          </li>
-					<li class="site-list__item">
-            <a class="site-list__link" href="#">Корзина: пока пуста</a>
-          </li>
-				</ul>
-			</div>
-		</nav>
-	</header>
-	<main class="main-page-container">
-    <h1>Милые штуки ручной работы для дома</h1>
-    <section class="products">
-			<div class="products__wrapper">
-				<ul class="products__list">
-					<li class="products__item">
-            <a class="products__description">Предметы интерьера</a>
-          </li>
-          <li class="products__item">
-            <a class="products__description">Детские игрушки</a>
-          </li>
-				</ul>
-			</div>
-		</section>
-		<section class="goods">
-			<div class="goods__wrapper">
-				<h2 class="goods__tittle">Вязаные корзинки</h2>
-        <h3>Товар недели</h3>
-        <p> Экологически чистая пряжа, <br />ручная работа. Доступны в шести <br />расцветках и трёх размерах. </p>
-        <ul class="goods__list">
-					<li class="goods__item">
-            Цвет: тиффани/серый
-          </li>
-					<li class="goods__item">
-            Диаметр: 25 см
-          </li>
-					<li class="goods__item">
-            Высота: 15 см
-          </li>
-				</ul>
-        <img class="goods__basket"
-             src="img/goodsbasket.svg"
-             width="260"
-             height="315"
-             alt="Вязанная корзинка">
-				<p>Цена: 990 руб.</p>
-        <a class="goods__order button" href="#">Заказать</a>
-      </div>
-		</section>
-		<section class="about">
-			<div class="about__wrapper">
-				<h2 class="visually-hidden">Коротко о нас:</h2>
-				<ul class="about__list">
-					<li class="about__item about__item--flower">
-						<b class="about__text">Экологически чистые материалы</b>
-          </li>
-					<li class="about__item about__item--price">
-						<b class="about__text">Увеличивает лайки на фотографиях</b>
-          </li>
-					<li class="about__item about__item--tangle">
-						<b class="about__text">Связано вручную с любовью и умилением</b>
-          </li>
-					<li class="about__item about__item--rocket">
-						<b class="about__text">Поддержка отечественного производителя</b>
-          </li>
-					<li class="about__item about__item--present">
-						<b class="about__text">Поставляется в подарочной упаковке</b>
-          </li>
-				</ul>
-			</div>
-		</section>
-		<section class="feedback">
-			<div class="feedback__wrapper slider">
-				<h2 class="feedback__title">Отзывы</h2>
-				<div class="feedback__list slider__list">
-					<blockquote class="feedback__item slider__item">
-						<div class="feedback__author-info">
-							<p class="feedback__text"> Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
-								<br />В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков! </p> <cite class="feedback__author-name">Анастасия Красильникова</cite> <cite class="feedback__author-nickname">@misssssiskras</cite> </div>
-					</blockquote>
-					<p class="feedback__toggles slider__toggles">
-						<button class="slider__toggle" type="button">←</button>
-						<button class="slider__toggle" type="button">→</button>
-					</p>
-          <a class="feedback__write button" href="#">Написать</a>
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img
+          class="main-header__logo-image"
+          src="img/mishka-logo.svg"
+          width="86"
+          height="35"
+          alt="Мишка"
+        />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#"> Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
         </div>
-		</section>
-	</main>
-	<footer class="main-footer">
-		<div class="main-footer__wrapper">
-			<div class="main-footer__contacts contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <p class="contacts__email">e-mail:
-          <a class="contacts__email contacts__email--address" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        </p>
-				<p class="contacts__text">адрес: г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101 </p>
-        <a class="contacts__write-us button" href="#">Напишите нам</a>
+      </nav>
+    </header>
+    <main class="main-page-container">
+      <section class="products">
+        <h1>Милые штуки ручной работы для дома</h1>
+        <div class="products__wrapper">
+          <ul class="products__list">
+            <li class="products__item">
+              <a class="products__description">Предметы интерьера</a>
+            </li>
+            <li class="products__item">
+              <a class="products__description">Детские игрушки</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="goods">
+        <div class="goods__wrapper">
+          <h2 class="goods__tittle">Вязаные корзинки</h2>
+          <h3>Товар недели</h3>
+          <p>
+            Экологически чистая пряжа, <br />ручная работа. Доступны в шести
+            <br />расцветках и трёх размерах.
+          </p>
+          <ul class="goods__list">
+            <li class="goods__item">Цвет: тиффани/серый</li>
+            <li class="goods__item">Диаметр: 25 см</li>
+            <li class="goods__item">Высота: 15 см</li>
+          </ul>
+          <img
+            class="goods__basket"
+            src="img/goodsbasket.svg"
+            width="260"
+            height="315"
+            alt="Вязанная корзинка"
+          />
+          <p>Цена: 990 руб.</p>
+          <a class="goods__order button" href="#">Заказать</a>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__wrapper">
+          <h2 class="visually-hidden">Коротко о нас:</h2>
+          <ul class="about__list">
+            <li class="about__item about__item--flower">
+              <b class="about__text">Экологически чистые материалы</b>
+            </li>
+            <li class="about__item about__item--price">
+              <b class="about__text">Увеличивает лайки на фотографиях</b>
+            </li>
+            <li class="about__item about__item--tangle">
+              <b class="about__text">Связано вручную с любовью и умилением</b>
+            </li>
+            <li class="about__item about__item--rocket">
+              <b class="about__text">Поддержка отечественного производителя</b>
+            </li>
+            <li class="about__item about__item--present">
+              <b class="about__text">Поставляется в подарочной упаковке</b>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="feedback__wrapper slider">
+          <h2 class="feedback__title">Отзывы</h2>
+          <div class="feedback__list slider__list">
+            <blockquote class="feedback__item slider__item">
+              <div class="feedback__author-info">
+                <p class="feedback__text">
+                  Я молодая мама, но всё равно фотографии не набирали и близко
+                  такого количества лайков, как у популярных инстамамочек.
+                  <br />В отчаянии, я накупила аксессуаров и игрушек в Мишке, и
+                  мои фотографии сразу стали более стильными, а также набирают
+                  больше лайков!
+                </p>
+                <cite class="feedback__author-name"
+                  >Анастасия Красильникова</cite
+                >
+                <cite class="feedback__author-nickname">@misssssiskras</cite>
+              </div>
+            </blockquote>
+            <p class="feedback__toggles slider__toggles">
+              <button class="slider__toggle" type="button">←</button>
+              <button class="slider__toggle" type="button">→</button>
+            </p>
+            <a class="feedback__write button" href="#">Написать</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__contacts contacts">
+          <h2 class="contacts__title">Контакты</h2>
+          <p class="contacts__email">
+            e-mail:
+            <a
+              class="contacts__email contacts__email--address"
+              href="mailto:info@mimimishkashop.ru"
+              >info@mimimishkashop.ru</a
+            >
+          </p>
+          <p class="contacts__text">
+            адрес: г. Санкт-Петербург<br />
+            ул. Большая Конюшенная<br />
+            д. 19/8, офис 101
+          </p>
+          <a class="contacts__write-us button" href="#">Напишите нам</a>
+        </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--yt" href="#">Ютуб</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tg" href="#">Телеграм</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru">
+            <img
+              class="main-footer__logo-image"
+              src="img/htmlacademy-logo.svg"
+              width="27"
+              height="35"
+              alt="HTML-academy"
+            />
+          </a>
+        </div>
       </div>
-      <div class="main-footer__social social">
-				<ul class="social__list">
-					<li class="social__item">
-            <a class="social__link social__link--vk" href="#">Вконтакте</a>
-          </li>
-					<li class="social__item">
-            <a class="social__link social__link--yt" href="#">Ютуб</a>
-          </li>
-					<li class="social__item">
-            <a class="social__link social__link--tg" href="#">Телеграм</a>
-          </li>
-				</ul>
-			</div>
-			<div class="main-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru">
-          <img class="main-footer__logo-image"
-               src="img/htmlacademy-logo.svg"
-               width="27"
-               height="35"
-               alt="HTML-academy" />
-        </a>
-      </div>
-		</div>
-		<div class="modal-container modal">
-			<div class="modal__modal modal__modal--auth">
-				<section class="modal__content">
-					<h2 class="modal__title">Добавить в корзину</h2>
+    </footer>
+    <div class="modal-container modal">
+      <div class="modal__modal modal__modal--shop">
+        <section class="modal__content">
+          <h2 class="modal__title">Добавить в корзину</h2>
           <p>Выберите размер:</p>
           <ul class="modal__list">
-						<li class="modal__item">
-							<label class="control">
-                <input class="control-input" type="checkbox" name="size" checked>
-                S
-              </label>
-						</li>
-						<li class="modal__item">
-							<label class="control">
-                <input class="control-input" type="checkbox" name="size">
-                M
-              </label>
-						</li>
-						<li class="modal__item">
-							<label class="control">
-                <input class="control-input" type="checkbox" name="size">
-                L
-              </label>
-						</li>
-					</ul>
-          <a class="modal__add button" href="#">Добавить</a>
+            <li class="modal__item">
+              <form class="form" action="#" method="post">
+                <fieldset class="form__fieldset">
+                  <label class="form__label form__label--text">
+                    <input
+                      class="form__control form__control--text"
+                      type="submit"
+                      name="size"
+                      value="S"
+                    />
+                    S
+                  </label>
+                </fieldset>
+              </form>
+            </li>
+            <li class="modal__item">
+              <form class="form" action="#" method="post">
+                <fieldset class="form__fieldset">
+                  <label class="form__label form__label--text">
+                    <input
+                      class="form__control form__control--text"
+                      type="submit"
+                      name="size"
+                      value="M"
+                    />
+                    M
+                  </label>
+                </fieldset>
+              </form>
+            </li>
+            <li class="modal__item">
+              <form class="form" action="#" method="post">
+                <fieldset class="form__fieldset">
+                  <label class="form__label form__label--text">
+                    <input
+                      class="form__control form__control--text"
+                      type="submit"
+                      name="size"
+                      value="L"
+                    />
+                    L
+                  </label>
+                </fieldset>
+              </form>
+            </li>
+          </ul>
+          <form class="form-button" action="#" method="post">
+            <button class="modal__modal button">
+              <span class="visually-hidden">Добавить</span>
+            </button>
+          </form>
         </section>
-			</div>
-	</footer>
-</body>
+      </div>
+    </div>
+  </body>
 </html>

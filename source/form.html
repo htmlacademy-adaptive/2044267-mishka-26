@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
@@ -7,14 +6,15 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo"></a>
-      <img
-        class="main-header__logo-image"
-        src="img/mishka-logo.svg"
-        width="86"
-        height="35"
-        alt="Мишка"
-      />
+      <a class="main-header__logo">
+        <img
+          class="main-header__logo-image"
+          src="img/mishka-logo.svg"
+          width="86"
+          height="35"
+          alt="Мишка"
+        />
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -37,159 +37,189 @@
         </div>
       </nav>
     </header>
-    <main class="main-form-container">
-      <h1>Вязание на заказ</h1>
-      <section class="form-info">
-        <div class="form-info__wrapper">
-          <b>
-            Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
-            форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-          </b>
-        </div>
-      </section>
-      <section class="type">
-        <div class="type__wrapper">
-          <h2 class="type__tittle">Тип</h2>
-          <ul class="type__list">
-            <li class="type__item">
-              <label class="control">
-                <input class="control-input" type="radio" name="type" checked />
-                Аксессуар для интерьера
-              </label>
+    <!-- ФОРМА -->
+    <form class="form" action="/action_page.php" method="post">
+      <div class="form-container form">
+        <h1>Вязание на заказ</h1>
+        <b>
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
+          форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </b>
+        <div class="form__type form__type--radio">
+          <h2 class="form__tittle">Тип</h2>
+          <ul class="form__list">
+            <li class="form__item">
+              <input
+                class="form__radio-input"
+                type="radio"
+                name="type"
+                value="Аксессуар для интерьера"
+                checked
+              />
+              <label class="form__radio-label">Аксессуар для интерьера</label>
             </li>
-            <li class="type__item">
-              <label class="control">
-                <input class="control-input" type="radio" name="type" />
-                Детская игрушка
-              </label>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="color">
-        <div class="color__wrapper">
-          <h2 class="color__tittle">Цвет</h2>
-          <ul class="color__list">
-            <li class="color__item">
-              <label class="control">
-                <input
-                  class="control-input"
-                  type="checkbox"
-                  name="color"
-                  checked
-                />
-                Белый
-              </label>
-            </li>
-            <li class="color__item">
-              <label class="control">
-                <input
-                  class="control-input"
-                  type="checkbox"
-                  name="color"
-                  checked
-                />
-                Серый
-              </label>
-            </li>
-            <li class="color__item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="color" />
-                Тиффани
-              </label>
-            </li>
-            <li class="color__item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="color" />
-                Черный
-              </label>
-            </li>
-            <li class="color__item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="color" />
-                Розовый
-              </label>
-            </li>
-            <li class="color__item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="color" />
-                Оранжевый
-              </label>
+            <li class="form__item">
+              <input
+                class="form__radio-input"
+                type="radio"
+                name="type"
+                value="Детская игрушка"
+              />
+              <label class="form__radio-label">Детская игрушка</label>
             </li>
           </ul>
         </div>
-      </section>
-      <section class="user-name">
-        <div class="user-name__wrapper">
-          <h2 class="user-name__tittle">ФИО</h2>
-          <form action="/action_page.php">
-            <label for="fname">Имя:</label><br />
-            <input
-              type="text"
-              id="fname"
-              name="fname"
-              value="Введите ваше имя*"
-            /><br />
-            <label for="lname">Фамилия:</label><br />
-            <input
-              type="text"
-              id="lname"
-              name="lname"
-              value="Введите вашу фамилию*"
-            /><br />
-            <label for="sname">Отчество:</label><br />
-            <input
-              type="text"
-              id="sname"
-              name="sname"
-              value="Отчество, если желаете"
-            /><br />
-          </form>
+      </div>
+      <div class="form-container form">
+        <h2 class="form__tittle">Цвет</h2>
+        <div class="form__type form__type--checkbox">
+          <ul class="form__list">
+            <li class="form__item">
+              <input
+                class="form__checkbox-input"
+                type="checkbox"
+                name="color"
+                value="white"
+                checked
+              />
+              <label class="form__chechbox-label">Белый</label>
+            </li>
+            <li class="form__item">
+              <input
+                class="form__checkbox-input"
+                type="checkbox"
+                name="color"
+                value="grey"
+                checked
+              />
+              <label class="form__checkbox-label">Серый</label>
+            </li>
+            <li class="form__item">
+              <input
+                class="form__checkbox-input"
+                type="checkbox"
+                name="color"
+                value="tiffani"
+              />
+              <label class="form__checkbox-label">Тиффани</label>
+            </li>
+            <li class="form__item">
+              <input
+                class="form__checkbox-input"
+                type="checkbox"
+                name="color"
+                value="black"
+              />
+              <label class="form__checkbox-label">Черный</label>
+            </li>
+            <li class="form__item">
+              <input
+                class="form__checkbox-input"
+                type="checkbox"
+                name="color"
+                value="pink"
+              />
+              <label class="form__checkbox-label">Розовый</label>
+            </li>
+            <li class="form__item">
+              <input
+                class="form__checkbox-input"
+                type="checkbox"
+                name="color"
+                value="orange"
+              />
+              <label class="form__checkbox-label">Оранжевый</label>
+            </li>
+          </ul>
         </div>
-      </section>
-      <section class="user-phone">
-        <div class="user-phone__wrapper">
-          <h2 class="user-phone__tittle">ТЕЛ</h2>
-          <form action="/action_page.php">
-            <label for="phone"></label>
-            <input
-              type="text"
-              id="user-phone"
-              name="user-phone"
-              value="+7 XXX XX XX*"/>
+      </div>
+      <!-- ФИО -->
+      <div class="form-container form">
+        <h2 class="form__tittle">ФИО</h2>
+        <div class="form__type form__type--name">
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__name-label">Имя:</label>
+              <input
+                class="form__name-input"
+                type="hidden"
+                id="firstname"
+                name="firstname"
+                value="Введите ваше имя*"
+              />
+            </li>
+            <li>
+              <label class="form__name-label">Фамилия:</label>
+              <input
+                class="form__name-input"
+                type="hidden"
+                id="lastname"
+                name="lastname"
+                value="Введите вашу фамилию*"
+              />
+            </li>
+            <li>
+              <label class="form__name-label">Отчество:</label>
+              <input
+                class="form__name-input"
+                type="hidden"
+                id="middlename"
+                name="middlename"
+                value="Отчество, если желаете"
+              />
+            </li>
+          </ul>
         </div>
-      </section>
-      <section class="user-email">
-        <div class="user-email__wrapper">
-          <h2 class="user-email__tittle">E-MAIL</h2>
-          <form action="/action_page.php">
-            <label for="e-mail"></label>
-            <input
-              type="text"
-              id="user-email"
-              name="user-email"
-              value="Ваш Email*"
-            />
+      </div>
+      <!-- ТЕЛЕФОН -->
+      <div class="form-container form">
+        <h2 class="form__tittle">ТЕЛ</h2>
+        <div class="form__type form__type--phone">
+          <input
+            class="form__phone-input"
+            type="hidden"
+            id="phone"
+            name="phone"
+            value="+7 XXX XX XX*"
+          />
+          <label class="form__phone-label">+7 XXX XX XX*</label>
         </div>
-      </section>
-      <!-- ДОП -->
-      <section class="user-text">
-        <div class="user-text__wrapper">
-          <h2 class="user-text__tittle">ДОП</h2>
-          <form action="/action_page.php">
-            <label for="e-mail"></label>
-             <input
-              type="text"
-              id="user-text"
-              name="user-text"
-              value="Опишите все ваши пожелания к заказу"
-            />
-          </form>
+      </div>
+      <!-- EMAIL -->
+      <div class="form-container form">
+        <h2 class="form__tittle">E-MAIL</h2>
+        <div class="form__type form__type--mail">
+          <input
+            class="form__mail-input"
+            type="hidden"
+            id="mail"
+            name="mail"
+            value="Ваш Email*"
+          />
+          <label class="form__mail-label">Ваш Email*</label>
+        </div>
+      </div>
+      <!-- ПОЛЕ ВВОДА -->
+      <div class="form-container form">
+        <h2 class="form__tittle">ДОП</h2>
+        <div class="form__type form__type--textarea">
+          <textarea
+            class="form__textarea-add-info"
+            id="add-info"
+            rows="7"
+            placeholder="Опишите все ваши пожелания к заказу"
+            required
+          ></textarea>
           <p>*Поля обязательны для заполнения</p>
         </div>
-      </section>
-      <a class="order__send button" href="#">Отправить заказ</a>
-    </main>
+      </div>
+      <div class="form-container form">
+        <div class="form__type form__type--button">
+          <button class="form__button" type="submit">Отправить заказ</button>
+        </div>
+      </div>
+    </form>
+    <!-- КОНЕЦ ФОРМЫ -->
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__social social">
