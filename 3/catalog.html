@@ -23,7 +23,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="#"> Каталог товаров</a>
+              <a class="site-list__link" href="#">Каталог товаров</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="#">Вязание на заказ</a>
@@ -38,94 +38,117 @@
         </div>
       </nav>
     </header>
-    <main class="main-page-container">
-      <section class="products">
-        <h1>Милые штуки ручной работы для дома</h1>
+    <main class="main-catalog-container">
+      <h1>Каталог товаров</h1>
+      <section class="catalog-products products">
         <div class="products__wrapper">
           <ul class="products__list">
             <li class="products__item">
-              <a class="products__description">Предметы интерьера</a>
+              <a class="products__card" href="#">
+                <img
+                  class="products__image"
+                  width="260"
+                  height="195"
+                  src="img/bunny.svg"
+                  alt="Зайчик"
+                />
+              </a>
+              <a class="products__link">
+                <h3>Зайчик-попрыгайчик</h3>
+              </a>
+              <p>Рост 30 см, вес 200 г</p>
+              <b>1200 руб.</b>
+              <a class="products__order" href="#"></a>
             </li>
             <li class="products__item">
-              <a class="products__description">Детские игрушки</a>
+              <a class="products__card" href="#">
+                <img
+                  class="products__image"
+                  width="260"
+                  height="195"
+                  src="img/basket.svg"
+                  alt="Корзинка"
+                />
+              </a>
+              <a class="products__link">
+                <h3>Корзинка для белья</h3>
+              </a>
+              <p>Диаметр 15 см, высота 10 см</p>
+              <b>690 руб.</b>
+              <a class="products__order" href="#"></a>
+            </li>
+            <li class="products__item">
+              <a class="products__card" href="#">
+                <img
+                  class="products__image"
+                  width="260"
+                  height="195"
+                  src="img/toys.svg"
+                  alt="Игрушки"
+                />
+              </a>
+              <a class="products__link">
+                <h3>Большая корзинка для игрушек</h3>
+              </a>
+              <p>Диаметр 30 см, высота 30 см</p>
+              <b>1500 руб.</b>
+              <a class="products__order" href="#"></a>
             </li>
           </ul>
         </div>
       </section>
-      <section class="goods">
-        <div class="goods__wrapper">
-          <h2 class="goods__tittle">Вязаные корзинки</h2>
-          <h3>Товар недели</h3>
-          <p>
-            Экологически чистая пряжа, <br />ручная работа. Доступны в шести
-            <br />расцветках и трёх размерах.
-          </p>
-          <ul class="goods__list">
-            <li class="goods__item">Цвет: тиффани/серый</li>
-            <li class="goods__item">Диаметр: 25 см</li>
-            <li class="goods__item">Высота: 15 см</li>
-          </ul>
-          <img
-            class="goods__basket"
-            src="img/goodsbasket.svg"
-            width="260"
-            height="315"
-            alt="Вязанная корзинка"
-          />
-          <p>Цена: 990 руб.</p>
-          <a class="goods__order button" href="#">Заказать</a>
-        </div>
-      </section>
-      <section class="about">
-        <div class="about__wrapper">
-          <h2 class="visually-hidden">Коротко о нас:</h2>
-          <ul class="about__list">
-            <li class="about__item about__item--flower">
-              <b class="about__text">Экологически чистые материалы</b>
-            </li>
-            <li class="about__item about__item--price">
-              <b class="about__text">Увеличивает лайки на фотографиях</b>
-            </li>
-            <li class="about__item about__item--tangle">
-              <b class="about__text">Связано вручную с любовью и умилением</b>
-            </li>
-            <li class="about__item about__item--rocket">
-              <b class="about__text">Поддержка отечественного производителя</b>
-            </li>
-            <li class="about__item about__item--present">
-              <b class="about__text">Поставляется в подарочной упаковке</b>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="feedback">
-        <div class="feedback__wrapper slider">
-          <h2 class="feedback__title">Отзывы</h2>
-          <div class="feedback__list slider__list">
-            <blockquote class="feedback__item slider__item">
-              <div class="feedback__author-info">
-                <p class="feedback__text">
-                  Я молодая мама, но всё равно фотографии не набирали и близко
-                  такого количества лайков, как у популярных инстамамочек.
-                  <br />В отчаянии, я накупила аксессуаров и игрушек в Мишке, и
-                  мои фотографии сразу стали более стильными, а также набирают
-                  больше лайков!
-                </p>
-                <cite class="feedback__author-name"
-                  >Анастасия Красильникова</cite
-                >
-                <cite class="feedback__author-nickname">@misssssiskras</cite>
-              </div>
-            </blockquote>
-            <p class="feedback__toggles slider__toggles">
-              <button class="slider__toggle" type="button">←</button>
-              <button class="slider__toggle" type="button">→</button>
-            </p>
-            <a class="feedback__write button" href="#">Написать</a>
+      <section class="video">
+        <div class="video__wrapper">
+          <h2 class="video__tittle">Процесс производства</h2>
+          <div class="video__static-image">
+            <!-- <img
+              class="video__play"
+              width="260"
+              height="150"
+              src="img/video.svg"
+              alt="Видео"
+            /> -->
           </div>
+          <div class="video__play-button">
+            <video class="video__source"></video>
+          </div>
+          <p>
+            По просьбам наших любимых фолловеров мы сняли для вас подробное
+            видео о том, как появляются наши товары.
+          </p>
+          <a class="video__order" href="#">Сделать заказ</a>
         </div>
       </section>
     </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--yt" href="#">Ютуб</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tg" href="#">Телеграм</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru">
+          <img
+            class="main-footer__logo-image"
+            src="img/htmlacademy-logo.svg"
+            width="27"
+            height="35"
+            alt="HTML-academy"
+          />
+        </a>
+      </div>
+    </footer>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__contacts contacts">
