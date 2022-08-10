@@ -179,41 +179,49 @@
           <ul class="modal__list">
             <li class="modal__item">
               <fieldset class="form__fieldset">
-                <input
-                  class="form__control form__control--text"
-                  type="submit"
-                  name="size"
-                  value="S"
-                />
-                <!-- <label class="form__label form__label--text">S</label> -->
+                <label class="form__label form__label--text" for="size-s"
+                  >S
+                  <input
+                    class="form__control form__control--text"
+                    type="radio"
+                    name="size-s"
+                    value="S"
+                    id="size-s"
+                    checked
+                  />
+                </label>
               </fieldset>
             </li>
             <li class="modal__item">
               <fieldset class="form__fieldset">
-                <input
-                  class="form__control form__control--text"
-                  type="submit"
-                  name="size"
-                  value="M"
-                />
-                <!-- <label class="form__label form__label--text">M</label> -->
+                <label class="form__label form__label--text" for="size-m"
+                  >M
+                  <input
+                    class="form__control form__control--text"
+                    type="radio"
+                    name="size-m"
+                    value="M"
+                    id="size-m"
+                  />
+                </label>
               </fieldset>
             </li>
             <li class="modal__item">
               <fieldset class="form__fieldset">
-                <input
-                  class="form__control form__control--text"
-                  type="submit"
-                  name="size"
-                  value="L"
-                />
-                <!-- <label class="form__label form__label--text">L</label> -->
+                <label class="form__label form__label--text" for="size-l"
+                  >L
+                  <input
+                    class="form__control form__control--text"
+                    type="radio"
+                    name="size-l"
+                    value="L"
+                    id="size-l"
+                  />
+                </label>
               </fieldset>
             </li>
           </ul>
-          <button class="modal__modal button">
-            <span class="visually-hidden">Добавить</span>
-          </button>
+          <input type="submit" value="Добавить" />
         </form>
       </div>
     </div>
