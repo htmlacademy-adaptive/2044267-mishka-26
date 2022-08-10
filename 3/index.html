@@ -54,7 +54,7 @@
       </section>
       <section class="goods">
         <div class="goods__wrapper">
-          <h2 class="goods__tittle">Вязаные корзинки</h2>
+          <h2 class="goods__title">Вязаные корзинки</h2>
           <h3>Товар недели</h3>
           <p>
             Экологически чистая пряжа, <br />ручная работа. Доступны в шести
@@ -176,45 +176,53 @@
       <div class="modal__modal modal__modal--shop">
         <h2 class="modal__title">Добавить в корзину</h2>
         <p>Выберите размер:</p>
-        <form class="form" action="/action_page.php" method="post">
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
           <ul class="modal__list">
             <li class="modal__item">
               <fieldset class="form__fieldset">
-                <input
-                  class="form__control form__control--text"
-                  type="submit"
-                  name="size"
-                  value="S"
-                />
-                <!-- <label class="form__label form__label--text">S</label> -->
+                <label class="form__label form__label--text" for="size-s"
+                  >S
+                  <input
+                    class="form__control form__control--text"
+                    type="radio"
+                    name="size"
+                    value="S"
+                    id="size-s"
+                    checked
+                  />
+                </label>
               </fieldset>
             </li>
             <li class="modal__item">
               <fieldset class="form__fieldset">
-                <input
-                  class="form__control form__control--text"
-                  type="submit"
-                  name="size"
-                  value="M"
-                />
-                <!-- <label class="form__label form__label--text">M</label> -->
+                <label class="form__label form__label--text" for="size-m"
+                  >M
+                  <input
+                    class="form__control form__control--text"
+                    type="radio"
+                    name="size"
+                    value="M"
+                    id="size-m"
+                  />
+                </label>
               </fieldset>
             </li>
             <li class="modal__item">
               <fieldset class="form__fieldset">
-                <input
-                  class="form__control form__control--text"
-                  type="submit"
-                  name="size"
-                  value="L"
-                />
-                <!-- <label class="form__label form__label--text">L</label> -->
+                <label class="form__label form__label--text" for="size-l"
+                  >L
+                  <input
+                    class="form__control form__control--text"
+                    type="radio"
+                    name="size"
+                    value="L"
+                    id="size-l"
+                  />
+                </label>
               </fieldset>
             </li>
           </ul>
-          <button class="modal__modal button">
-            <span class="visually-hidden">Добавить</span>
-          </button>
+          <input type="submit" value="Добавить" />
         </form>
       </div>
     </div>
