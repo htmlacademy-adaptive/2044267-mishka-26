@@ -2,37 +2,485 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/opensans.woff2) format("woff2");
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/opensans.woff) format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/opensansbold.woff2) format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url(../fonts/opensansbold.woff) format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
   font-display: swap;
 }
 body {
-  font-family: "Open Sans";
-  font-weight: 700;
-  line-height: 30px;
+  font-family: "Open Sans", sans-serif;
   color: #000000;
   background-color: #ffffff;
   margin: 0;
+}
+.content {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  background-color: #ffffff;
   width: 320px;
+}
+.main-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+.main-header__logo-image {
+  margin: 22px 118px;
+}
+.main-nav {
+  color: #000000;
+  background-color: #ffffff;
+}
+.main-nav__list {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  list-style: none;
+}
+.site-list__link {
+  color: #000000;
+  text-decoration: none;
+}
+.products {
+  color: #000000;
+  background-color: #ffffff;
+}
+.products__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  color: #000000;
+  align-items: center;
+  text-align: center;
+}
+.products__list {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  align-items: center;
+  color: #ffffff;
+  list-style: none;
+}
+.products__item-interior {
+  color: #ffffff;
+  background-color: #63d1bb;
+}
+.products__item-toys {
+  color: #ffffff;
+  background-color: #56c3b2;
+}
+.goods {
+  color: #000000;
+  background-color: #ffffff;
+}
+.goods__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  align-items: center;
+  color: #000000;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.goods__subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #63d1bb;
+  margin-left: 30px;
+}
+.goods__description {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  align-items: center;
+  color: #444444;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.goods__list {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  align-items: center;
+  color: #444444;
+  list-style: none;
+}
+.goods__basket {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.goods__price {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  color: #444444;
+}
+.goods__order {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #444444;
+}
+.about {
+  color: #000000;
+  background-color: #ffffff;
+}
+.about__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  margin-left: 30px;
+}
+.about__list {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  list-style: none;
+  color: #000000;
+}
+.about__text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+}
+.feedback {
+  color: #000000;
+  background-color: #ffffff;
+}
+.feedback__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  margin-left: 30px;
+}
+.feedback__text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+.feedback__author-name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+}
+.feedback__author-nickname {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+.feedback__write {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #444444;
+}
+.modal-container {
+  color: #000000;
+  background-color: #ffffff;
+}
+.main-footer {
+  color: #000000;
+  background-color: #ffffff;
+}
+.contacts__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  align-items: center;
+  color: #000000;
+  margin-left: 29px;
+}
+.contacts__email {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  align-items: center;
+  color: #444444;
+  margin-left: 29px;
+}
+.contacts__text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  align-items: center;
+  color: #444444;
+  margin-left: 107px;
+}
+.contacts__write-us {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #444444;
+}
+.main-footer__social {
+  color: #000000;
+  background-color: #f1f1f1;
+}
+.social__list {
+  list-style: none;
+}
+.social__link {
+  text-decoration: none;
+}
+.main-footer__copyright {
+  color: #000000;
+  background-color: #f1f1f1;
+}
+.copyright__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  align-items: center;
+  color: #000000;
+  margin-left: 69px;
+}
+.modal__modal {
+  background-color: #ffffff;
+  mix-blend-mode: normal;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);
+}
+.modal__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-left: 74px;
+  margin-right: 70px;
+}
+.modal__text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  color: #444444;
+}
+.modal__list {
+  list-style: none;
+}
+.form__control {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444444;
+}
+.modal__button {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  box-sizing: border-box;
+  border: none;
+  background-color: #63d1bb;
+}
+.catalog-products {
+  color: #000000;
+  background-color: #ffffff;
+}
+.page__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  background-color: #f1f1f1;
+}
+.catalog-products__list {
+  list-style: none;
+}
+.catalog-products__item {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+}
+.catalog-products__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  align-items: center;
+  color: #000000;
+}
+.catalog-products__text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  align-items: center;
+  color: #444444;
+}
+.catalog-products__price {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  align-items: center;
+  color: #000000;
+}
+.video {
+  color: #000000;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #ececec;
+  margin-left: 30px;
+}
+.video__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  align-items: center;
+  color: #000000;
+  margin-left: 91px;
+}
+.video__text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  align-items: center;
+  color: #444444;
+}
+.form {
+  color: #000000;
+  background-color: #ffffff;
+}
+.form__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #63d1bb;
+  margin-left: 30px;
+}
+.form__list {
+  list-style: none;
+}
+.form__item {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  align-items: center;
+  color: #000000;
+}
+.form__text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  color: #444444;
+}
+.page__description {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  align-items: center;
+  color: #444444;
+  margin-left: 30px;
 }
 /*# sourceMappingURL=style.css.map */
