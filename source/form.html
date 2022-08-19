@@ -62,7 +62,7 @@
                     value="Аксессуар для интерьера"
                     checked
                   />
-                  <label class="form__label--radio"
+                  <label class="form__label form__label--radio"
                     >Аксессуар для интерьера</label
                   >
                 </li>
@@ -73,7 +73,9 @@
                     name="type"
                     value="Детская игрушка"
                   />
-                  <label class="form__label--radio">Детская игрушка</label>
+                  <label class="form__label form__label--radio"
+                    >Детская игрушка</label
+                  >
                 </li>
               </ul>
             </div>
@@ -91,7 +93,9 @@
                     id="white"
                     checked
                   />
-                  <label class="form__label--checkbox" for="white">Белый</label>
+                  <label class="form__label form__label--checkbox" for="white"
+                    >Белый</label
+                  >
                 </li>
                 <li class="form__item">
                   <input
@@ -101,7 +105,9 @@
                     value="grey"
                     checked
                   />
-                  <label class="form__label--checkbox" for="grey">Серый</label>
+                  <label class="form__label form__label--checkbox" for="grey"
+                    >Серый</label
+                  >
                 </li>
                 <li class="form__item">
                   <input
@@ -111,7 +117,7 @@
                     value="tiffani"
                     id="grey"
                   />
-                  <label class="form__label--checkbox" for="tiffani"
+                  <label class="form__label form__label--checkbox" for="tiffani"
                     >Тиффани</label
                   >
                 </li>
@@ -123,7 +129,7 @@
                     value="black"
                     id="tiffani"
                   />
-                  <label class="form__label--checkbox" for="black"
+                  <label class="form__label form__label--checkbox" for="black"
                     >Черный</label
                   >
                 </li>
@@ -135,7 +141,7 @@
                     value="pink"
                     id="pink"
                   />
-                  <label class="form__label--checkbox" for="pink"
+                  <label class="form__label form__label--checkbox" for="pink"
                     >Розовый</label
                   >
                 </li>
@@ -147,7 +153,7 @@
                     value="orange"
                     id="orange"
                   />
-                  <label class="form__label--checkbox" for="orange"
+                  <label class="form__label form__label--checkbox" for="orange"
                     >Оранжевый</label
                   >
                 </li>
@@ -160,27 +166,27 @@
             <div class="form__type form__type--name">
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="form__name-label">Имя:</label>
+                  <label class="form__data">Имя:</label>
                   <input
-                    class="form__name-input"
+                    class="form__input form__input-name"
                     type="text"
                     name="firstname"
                     placeholder="Введите ваше имя*"
                   />
                 </li>
                 <li class="form__item">
-                  <label class="form__name-label">Фамилия:</label>
+                  <label class="form__data">Фамилия:</label>
                   <input
-                    class="form__name-input"
+                    class="form__input form__input-lastname"
                     type="text"
                     name="lastname"
                     placeholder="Введите вашу фамилию*"
                   />
                 </li>
                 <li class="form__item">
-                  <label class="form__name-label">Отчество:</label>
+                  <label class="form__data">Отчество:</label>
                   <input
-                    class="form__name-input"
+                    class="form__input form__input-middlename"
                     type="text"
                     name="middlename"
                     placeholder="Отчество, если желаете"
@@ -195,7 +201,7 @@
               <label class="form__title"
                 >ТЕЛ
                 <input
-                  class="form__phone-input"
+                  class="form__input form__input-phone"
                   type="tel"
                   name="tel"
                   placeholder="+7 XXX XX XX*"
@@ -209,7 +215,7 @@
               <label class="form__title"
                 >E-MAIL
                 <input
-                  class="form__mail-input"
+                  class="form__input form__input-mail"
                   type="email"
                   name="email"
                   placeholder="Ваш Email*"
