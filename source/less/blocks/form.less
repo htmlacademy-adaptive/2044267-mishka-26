@@ -3,6 +3,20 @@
   background-color: #ffffff;
 }
 
+.form__container {
+  width: 668px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
 .form__control {
   font-weight: 700;
   font-size: 17px;

@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
-    <div class="content">
-      <header class="main-header">
+    <header class="main-header">
+      <div class="container">
         <a class="main-header__logo" href="index.html">
           <img
             class="main-header__logo-image"
@@ -18,80 +18,82 @@
             alt="Мишка"
           />
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">
-                  Каталог товаров</a
-                >
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Вязание на заказ</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="#">Поиск по сайту</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="#">Корзина: пока пуста</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <main class="main-page-container">
-        <section class="products">
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                Каталог товаров</a
+              >
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-page-container">
+      <section class="products">
+        <div class="container products__wrapper">
           <h1 class="products__title">
             Милые штуки<br />
             ручной<br />
             работы для дома
           </h1>
-          <div class="products__wrapper">
-            <ul class="products__list">
-              <li class="products__item-interior">
-                <a class="products__description"
-                  >Предметы<br />
-                  интерьера</a
-                >
-              </li>
-              <li class="products__item-toys">
-                <a class="products__description"
-                  >Детские<br />
-                  игрушки</a
-                >
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="goods">
-          <div class="goods__wrapper">
-            <h2 class="goods__title">Вязаные корзинки</h2>
-            <h3 class="goods__subtitle">Товар недели</h3>
-            <p class="goods__description">
-              Экологически чистая пряжа, <br />ручная работа. Доступны в шести
-              <br />расцветках и трёх размерах.
-            </p>
-            <ul class="goods__list">
-              <li class="goods__item">Цвет: тиффани/серый</li>
-              <li class="goods__item">Диаметр: 25 см</li>
-              <li class="goods__item">Высота: 15 см</li>
-            </ul>
-            <img
-              class="goods__basket"
-              src="img/goodsbasket.svg"
-              width="260"
-              height="315"
-              alt="Вязанная корзинка"
-            />
-            <p class="goods__price">Цена: 990 руб.</p>
-            <a class="goods__order button" href="form.html">Заказать</a>
-          </div>
-        </section>
-        <section class="about">
-          <div class="about__wrapper">
+          <ul class="products__list">
+            <li class="products__item-interior">
+              <a class="products__description"
+                >Предметы<br />
+                интерьера</a
+              >
+            </li>
+            <li class="products__item-toys">
+              <a class="products__description"
+                >Детские<br />
+                игрушки</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="goods">
+        <div class="container goods__wrapper">
+          <h2 class="goods__title">Вязаные корзинки</h2>
+          <h3 class="goods__subtitle">Товар недели</h3>
+          <p class="goods__description">
+            Экологически чистая пряжа, <br />ручная работа. Доступны в шести
+            <br />расцветках и трёх размерах.
+          </p>
+          <ul class="goods__list">
+            <li class="goods__item">Цвет: тиффани/серый</li>
+            <li class="goods__item">Диаметр: 25 см</li>
+            <li class="goods__item">Высота: 15 см</li>
+          </ul>
+          <img
+            class="goods__basket"
+            src="img/goodsbasket.svg"
+            width="260"
+            height="315"
+            alt="Вязанная корзинка"
+          />
+          <p class="goods__price">Цена: 990 руб.</p>
+          <a class="goods__order button" href="form.html">Заказать</a>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container about__wrapper">
+          <div class="about-main">
             <h2 class="about__title">Коротко о нас:</h2>
             <ul class="about__list">
               <li class="about__item about__item--flower">
@@ -132,9 +134,11 @@
               </li>
             </ul>
           </div>
-        </section>
-        <section class="feedback">
-          <div class="feedback__wrapper slider">
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="container feedback__wrapper">
+          <div class="slider">
             <h2 class="feedback__title">Отзывы</h2>
             <div class="feedback__list slider__list">
               <blockquote class="feedback__item slider__item">
@@ -159,103 +163,103 @@
               <a class="feedback__write button" href="#">Написать</a>
             </div>
           </div>
-        </section>
-      </main>
-      <footer class="main-footer">
-        <div class="main-footer__wrapper">
-          <div class="main-footer__contacts contacts">
-            <h2 class="contacts__title">Контакты</h2>
-            <p class="contacts__email">
-              e-mail:
-              <a
-                class="contacts__email contacts__email--address"
-                href="mailto:info@mimimishkashop.ru"
-                >info@mimimishkashop.ru</a
-              >
-            </p>
-            <p class="contacts__text">
-              адрес: г. Санкт-Петербург<br />
-              ул. Большая Конюшенная<br />
-              д. 19/8, офис 101
-            </p>
-            <a class="contacts__write-us button" href="#">Напишите нам</a>
-          </div>
-          <div class="main-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vk" href="#">Вконтакте</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--yt" href="#">Ютуб</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--tg" href="#">Телеграм</a>
-              </li>
-            </ul>
-          </div>
-          <div class="main-footer__copyright copyright">
-            <b class="copyright__text">Разработано</b>
-            <a class="copyright__link" href="https://htmlacademy.ru">
-              <img
-                class="main-footer__logo-image"
-                src="img/htmlacademy-logo.svg"
-                width="27"
-                height="35"
-                alt="HTML-academy"
-              />
-            </a>
-          </div>
         </div>
-      </footer>
-      <div class="modal-container modal">
-        <div class="modal__wrapper modal__wrapper--shop">
-          <h2 class="modal__title">Добавить в корзину</h2>
-          <p class="modal__text">Выберите размер:</p>
-          <form class="form" action="/action_page.php" method="post">
-            <ul class="modal__list">
-              <li class="modal__item">
-                <fieldset class="form__fieldset">
-                  <label class="form__label form__label--text"
-                    >S
-                    <input
-                      class="form__control form__control--text"
-                      type="submit"
-                      name="size"
-                      value="S"
-                    />
-                  </label>
-                </fieldset>
-              </li>
-              <li class="modal__item">
-                <fieldset class="form__fieldset">
-                  <label class="form__label form__label--text"
-                    >M
-                    <input
-                      class="form__control form__control--text"
-                      type="submit"
-                      name="size"
-                      value="M"
-                    />
-                  </label>
-                </fieldset>
-              </li>
-              <li class="modal__item">
-                <fieldset class="form__fieldset">
-                  <label class="form__label form__label--text"
-                    >L
-                    <input
-                      class="form__control form__control--text"
-                      type="submit"
-                      name="size"
-                      value="L"
-                    />
-                  </label>
-                </fieldset>
-              </li>
-            </ul>
-            <input class="modal__button" type="submit" value="Добавить" />
-          </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container main-footer__wrapper">
+        <div class="main-footer__contacts contacts">
+          <h2 class="contacts__title">Контакты</h2>
+          <p class="contacts__email">
+            e-mail:
+            <a
+              class="contacts__email contacts__email--address"
+              href="mailto:info@mimimishkashop.ru"
+              >info@mimimishkashop.ru</a
+            >
+          </p>
+          <p class="contacts__text">
+            адрес: г. Санкт-Петербург<br />
+            ул. Большая Конюшенная<br />
+            д. 19/8, офис 101
+          </p>
+          <a class="contacts__write-us button" href="#">Напишите нам</a>
         </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--yt" href="#">Ютуб</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tg" href="#">Телеграм</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru">
+            <img
+              class="main-footer__logo-image"
+              src="img/htmlacademy-logo.svg"
+              width="27"
+              height="35"
+              alt="HTML-academy"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="container modal">
+      <div class="modal__wrapper modal__wrapper--shop">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <form class="form" action="/action_page.php" method="post">
+          <ul class="modal__list">
+            <li class="modal__item">
+              <fieldset class="form__fieldset">
+                <label class="form__label form__label--text"
+                  >S
+                  <input
+                    class="form__control form__control--text"
+                    type="submit"
+                    name="size"
+                    value="S"
+                  />
+                </label>
+              </fieldset>
+            </li>
+            <li class="modal__item">
+              <fieldset class="form__fieldset">
+                <label class="form__label form__label--text"
+                  >M
+                  <input
+                    class="form__control form__control--text"
+                    type="submit"
+                    name="size"
+                    value="M"
+                  />
+                </label>
+              </fieldset>
+            </li>
+            <li class="modal__item">
+              <fieldset class="form__fieldset">
+                <label class="form__label form__label--text"
+                  >L
+                  <input
+                    class="form__control form__control--text"
+                    type="submit"
+                    name="size"
+                    value="L"
+                  />
+                </label>
+              </fieldset>
+            </li>
+          </ul>
+          <input class="modal__button" type="submit" value="Добавить" />
+        </form>
       </div>
     </div>
   </body>
