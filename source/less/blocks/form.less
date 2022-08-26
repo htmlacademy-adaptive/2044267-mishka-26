@@ -4,12 +4,26 @@
 }
 
 .form__container {
-  width: 668px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
     padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
+.form__container--color,
+.form__container--contacts {
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    padding: 0 50px;
+    background-color: #f1f1f1;
   }
 
   @media (min-width: @desktop-width) {

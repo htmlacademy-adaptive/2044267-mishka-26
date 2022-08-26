@@ -4,7 +4,6 @@
 }
 
 .catalog-products__wrapper {
-  width: 668px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -19,6 +18,12 @@
 
 .catalog-products__list {
   list-style: none;
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    display: grid;
+    grid-template-columns: 316px 316px 316px;
+  }
 }
 
 .catalog-products__item {
