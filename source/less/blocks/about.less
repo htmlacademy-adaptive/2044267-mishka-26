@@ -35,6 +35,16 @@
   line-height: 20px;
   list-style: none;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    display: grid;
+    grid-template-columns: 265px 325px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
 }
 
 .about__text {
