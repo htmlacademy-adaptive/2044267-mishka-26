@@ -60,6 +60,18 @@ body {
   list-style: none;
   color: #000000;
 }
+@media (min-width: 768px) {
+  .about__list {
+    width: 768px;
+    display: grid;
+    grid-template-columns: 265px 325px;
+  }
+}
+@media (min-width: 1150px) {
+  .about__list {
+    width: 1150px;
+  }
+}
 .about__text {
   font-weight: 700;
   font-size: 17px;
@@ -71,7 +83,6 @@ body {
   background-color: #ffffff;
 }
 .catalog-products__wrapper {
-  width: 668px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -87,6 +98,13 @@ body {
 }
 .catalog-products__list {
   list-style: none;
+}
+@media (min-width: 1150px) {
+  .catalog-products__list {
+    width: 1150px;
+    display: grid;
+    grid-template-columns: 316px 316px 316px;
+  }
 }
 .catalog-products__item {
   box-sizing: border-box;
@@ -132,6 +150,15 @@ body {
   color: #444444;
   margin-left: 107px;
 }
+.contacts__map-wrapper {
+  margin: 0 auto;
+}
+@media (min-width: 1150px) {
+  .contacts__map-wrapper {
+    width: 1150px;
+    padding: 0 50px;
+  }
+}
 .contacts__write-us {
   font-weight: 700;
   font-size: 18px;
@@ -171,7 +198,6 @@ body {
 .feedback__wrapper {
   display: flex;
   justify-content: space-between;
-  width: 668px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -224,7 +250,6 @@ body {
   background-color: #ffffff;
 }
 .form__container {
-  width: 668px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -235,6 +260,24 @@ body {
 }
 @media (min-width: 1150px) {
   .form__container {
+    width: 1150px;
+  }
+}
+.form__container-color,
+.form__container-contacts {
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .form__container-color,
+  .form__container-contacts {
+    width: 768px;
+    padding: 0 50px;
+    background-color: #f1f1f1;
+  }
+}
+@media (min-width: 1150px) {
+  .form__container-color,
+  .form__container-contacts {
     width: 1150px;
   }
 }
@@ -310,7 +353,6 @@ body {
   background-color: #ffffff;
 }
 .goods__wrapper {
-  width: 668px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -387,7 +429,6 @@ body {
 }
 .main-header__logo-image {
   height: 35px;
-  margin: 22px 118px;
 }
 @media (min-width: 768px) {
   .main-header__logo-image {
@@ -417,7 +458,6 @@ body {
 .main-nav__wrapper {
   display: flex;
   justify-content: space-between;
-  width: 668px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -498,7 +538,6 @@ body {
   background-repeat: no-repeat;
 }
 .products__wrapper {
-  width: 668px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -559,10 +598,8 @@ body {
   background-color: #ffffff;
   box-sizing: border-box;
   border: 1px solid #ececec;
-  margin-left: 30px;
 }
 .video__wrapper {
-  width: 668px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
