@@ -18,6 +18,11 @@
 
 .catalog-products__list {
   list-style: none;
+  padding-left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;

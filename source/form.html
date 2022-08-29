@@ -44,7 +44,9 @@
       </nav>
     </header>
     <main class="main">
-      <h1 class="container page__title">Вязание на заказ</h1>
+      <div class="page__title">
+        <h1 class="container page__title">Вязание на заказ</h1>
+      </div>
       <p class="container page__description">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
         заказа и мы свяжемся с вами, чтобы уточнить детали.
@@ -81,84 +83,86 @@
             </ul>
           </div>
         </div>
-        <div class="container form__container-color">
-          <h2 class="form__title">Цвет</h2>
-          <div class="form__type form__type--checkbox">
-            <ul class="form__list">
-              <li class="form__item">
-                <input
-                  class="form__checkbox-input"
-                  type="checkbox"
-                  name="color"
-                  value="white"
-                  id="white"
-                  checked
-                />
-                <label class="form__label form__label--checkbox" for="white"
-                  >Белый</label
-                >
-              </li>
-              <li class="form__item">
-                <input
-                  class="form__checkbox-input"
-                  type="checkbox"
-                  name="color"
-                  value="grey"
-                  checked
-                />
-                <label class="form__label form__label--checkbox" for="grey"
-                  >Серый</label
-                >
-              </li>
-              <li class="form__item">
-                <input
-                  class="form__checkbox-input"
-                  type="checkbox"
-                  name="color"
-                  value="tiffani"
-                  id="grey"
-                />
-                <label class="form__label form__label--checkbox" for="tiffani"
-                  >Тиффани</label
-                >
-              </li>
-              <li class="form__item">
-                <input
-                  class="form__checkbox-input"
-                  type="checkbox"
-                  name="color"
-                  value="black"
-                  id="tiffani"
-                />
-                <label class="form__label form__label--checkbox" for="black"
-                  >Черный</label
-                >
-              </li>
-              <li class="form__item">
-                <input
-                  class="form__checkbox-input"
-                  type="checkbox"
-                  name="color"
-                  value="pink"
-                  id="pink"
-                />
-                <label class="form__label form__label--checkbox" for="pink"
-                  >Розовый</label
-                >
-              </li>
-              <li class="form__item">
-                <input
-                  class="form__checkbox-input"
-                  type="checkbox"
-                  name="color"
-                  value="orange"
-                  id="orange"
-                />
-                <label class="form__label form__label--checkbox" for="orange"
-                  >Оранжевый</label
-                >
-              </li>
-            </ul>
+        <div class="form__color">
+          <div class="container form__container">
+            <h2 class="form__title">Цвет</h2>
+            <div class="form__type form__type--checkbox">
+              <ul class="form__list">
+                <li class="form__item">
+                  <input
+                    class="form__checkbox-input"
+                    type="checkbox"
+                    name="color"
+                    value="white"
+                    id="white"
+                    checked
+                  />
+                  <label class="form__label form__label--checkbox" for="white"
+                    >Белый</label
+                  >
+                </li>
+                <li class="form__item">
+                  <input
+                    class="form__checkbox-input"
+                    type="checkbox"
+                    name="color"
+                    value="grey"
+                    checked
+                  />
+                  <label class="form__label form__label--checkbox" for="grey"
+                    >Серый</label
+                  >
+                </li>
+                <li class="form__item">
+                  <input
+                    class="form__checkbox-input"
+                    type="checkbox"
+                    name="color"
+                    value="tiffani"
+                    id="grey"
+                  />
+                  <label class="form__label form__label--checkbox" for="tiffani"
+                    >Тиффани</label
+                  >
+                </li>
+                <li class="form__item">
+                  <input
+                    class="form__checkbox-input"
+                    type="checkbox"
+                    name="color"
+                    value="black"
+                    id="tiffani"
+                  />
+                  <label class="form__label form__label--checkbox" for="black"
+                    >Черный</label
+                  >
+                </li>
+                <li class="form__item">
+                  <input
+                    class="form__checkbox-input"
+                    type="checkbox"
+                    name="color"
+                    value="pink"
+                    id="pink"
+                  />
+                  <label class="form__label form__label--checkbox" for="pink"
+                    >Розовый</label
+                  >
+                </li>
+                <li class="form__item">
+                  <input
+                    class="form__checkbox-input"
+                    type="checkbox"
+                    name="color"
+                    value="orange"
+                    id="orange"
+                  />
+                  <label class="form__label form__label--checkbox" for="orange"
+                    >Оранжевый</label
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <!-- ФИО -->
@@ -197,31 +201,35 @@
           </div>
         </div>
         <!-- ТЕЛЕФОН -->
-        <div class="form__container form__container-contacts">
-          <div class="form__type form__type--phone">
-            <label class="form__title"
-              >ТЕЛ
-              <input
-                class="form__input form__input-phone"
-                type="tel"
-                name="tel"
-                placeholder="+7 XXX XX XX*"
-              />
-            </label>
+        <div class="form__contacts">
+          <div class="container form__container">
+            <div class="form__type form__type--phone">
+              <label class="form__title"
+                >ТЕЛ
+                <input
+                  class="form__input form__input-phone"
+                  type="tel"
+                  name="tel"
+                  placeholder="+7 XXX XX XX*"
+                />
+              </label>
+            </div>
           </div>
         </div>
         <!-- EMAIL -->
-        <div class="form__container form__container-contacts">
-          <div class="form__type form__type--mail">
-            <label class="form__title"
-              >E-MAIL
-              <input
-                class="form__input form__input-mail"
-                type="email"
-                name="email"
-                placeholder="Ваш Email*"
-              />
-            </label>
+        <div class="form__contacts">
+          <div class="container form__container">
+            <div class="form__type form__type--mail">
+              <label class="form__title"
+                >E-MAIL
+                <input
+                  class="form__input form__input-mail"
+                  type="email"
+                  name="email"
+                  placeholder="Ваш Email*"
+                />
+              </label>
+            </div>
           </div>
         </div>
         <!-- ПОЛЕ ВВОДА -->

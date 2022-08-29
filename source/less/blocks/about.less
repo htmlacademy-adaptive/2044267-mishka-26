@@ -4,9 +4,6 @@
 }
 
 .about__wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 668px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -25,8 +22,6 @@
   font-size: 25px;
   line-height: 30px;
   color: #000000;
-  margin: 0;
-  padding: 0;
 }
 
 .about__list {
@@ -35,15 +30,12 @@
   line-height: 20px;
   list-style: none;
   color: #000000;
+  padding-left: 0;
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
     display: grid;
     grid-template-columns: 265px 325px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: @desktop-width;
   }
 }
 
