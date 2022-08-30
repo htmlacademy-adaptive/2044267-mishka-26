@@ -21,10 +21,10 @@
         </a>
       </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
+        <div class="container main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">
@@ -44,8 +44,10 @@
         </div>
       </nav>
     </header>
-    <main class="main-catalog">
-      <h1 class="container page__title">Каталог товаров</h1>
+    <main class="catalog">
+      <div class="page__title">
+        <h1 class="container page__title">Каталог товаров</h1>
+      </div>
       <section class="catalog-products">
         <div class="container catalog-products__wrapper">
           <ul class="catalog-products__list">
@@ -105,8 +107,8 @@
           </ul>
         </div>
       </section>
-      <section class="video">
-        <div class="container video__wrapper">
+      <section class="video container">
+        <div class="video__wrapper">
           <h2 class="video__title">Процесс производства</h2>
           <div class="video__static-image">
             <img
