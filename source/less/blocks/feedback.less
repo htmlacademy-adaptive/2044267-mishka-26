@@ -3,6 +3,21 @@
   background-color: #ffffff;
 }
 
+.feedback__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
 .feedback__title {
   font-weight: 700;
   font-size: 25px;

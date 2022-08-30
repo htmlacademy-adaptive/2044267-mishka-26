@@ -2,13 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Мишка</title>
-    <!-- <style type="style.css"></style> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
-    <div class="content">
-      <header class="main-header">
+    <header class="main-header">
+      <div class="container">
         <a class="main-header__logo" href="index.html">
           <img
             class="main-header__logo-image"
@@ -18,69 +18,73 @@
             alt="Мишка"
           />
         </a>
-        <nav class="main-nav">
+      </div>
+      <nav class="main-nav">
+        <div class="container main-nav__wrapper">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">
-                  Каталог товаров</a
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                Каталог товаров</a
+              >
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="page__title">
+        <h1 class="container page__title">Вязание на заказ</h1>
+      </div>
+      <p class="container page__description">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+        заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+      <!-- ФОРМА -->
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="container form__container">
+          <div class="form__type form__type--radio">
+            <h2 class="form__title">Тип</h2>
+            <ul class="form__list">
+              <li class="form__item">
+                <input
+                  class="form__radio-input"
+                  type="radio"
+                  name="type"
+                  value="Аксессуар для интерьера"
+                  checked
+                />
+                <label class="form__label form__label--radio"
+                  >Аксессуар для интерьера</label
                 >
               </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Вязание на заказ</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="#">Поиск по сайту</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="#">Корзина: пока пуста</a>
+              <li class="form__item">
+                <input
+                  class="form__radio-input"
+                  type="radio"
+                  name="type"
+                  value="Детская игрушка"
+                />
+                <label class="form__label form__label--radio"
+                  >Детская игрушка</label
+                >
               </li>
             </ul>
           </div>
-        </nav>
-      </header>
-      <main class="main">
-        <h1 class="page__title">Вязание на заказ</h1>
-        <p class="page__description">
-          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
-          форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-        </p>
-        <!-- ФОРМА -->
-        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="form__container">
-            <div class="form__type form__type--radio">
-              <h2 class="form__title">Тип</h2>
-              <ul class="form__list">
-                <li class="form__item">
-                  <input
-                    class="form__radio-input"
-                    type="radio"
-                    name="type"
-                    value="Аксессуар для интерьера"
-                    checked
-                  />
-                  <label class="form__label form__label--radio"
-                    >Аксессуар для интерьера</label
-                  >
-                </li>
-                <li class="form__item">
-                  <input
-                    class="form__radio-input"
-                    type="radio"
-                    name="type"
-                    value="Детская игрушка"
-                  />
-                  <label class="form__label form__label--radio"
-                    >Детская игрушка</label
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="form__container">
+        </div>
+        <div class="form__color">
+          <div class="container form__container">
             <h2 class="form__title">Цвет</h2>
             <div class="form__type form__type--checkbox">
               <ul class="form__list">
@@ -160,43 +164,45 @@
               </ul>
             </div>
           </div>
-          <!-- ФИО -->
-          <div class="form__container">
-            <h2 class="form__title">ФИО</h2>
-            <div class="form__type form__type--name">
-              <ul class="form__list">
-                <li class="form__item">
-                  <label class="form__data">Имя:</label>
-                  <input
-                    class="form__input form__input-name"
-                    type="text"
-                    name="firstname"
-                    placeholder="Введите ваше имя*"
-                  />
-                </li>
-                <li class="form__item">
-                  <label class="form__data">Фамилия:</label>
-                  <input
-                    class="form__input form__input-lastname"
-                    type="text"
-                    name="lastname"
-                    placeholder="Введите вашу фамилию*"
-                  />
-                </li>
-                <li class="form__item">
-                  <label class="form__data">Отчество:</label>
-                  <input
-                    class="form__input form__input-middlename"
-                    type="text"
-                    name="middlename"
-                    placeholder="Отчество, если желаете"
-                  />
-                </li>
-              </ul>
-            </div>
+        </div>
+        <!-- ФИО -->
+        <div class="container form__container">
+          <h2 class="form__title">ФИО</h2>
+          <div class="form__type form__type--name">
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__data">Имя:</label>
+                <input
+                  class="form__input form__input-name"
+                  type="text"
+                  name="firstname"
+                  placeholder="Введите ваше имя*"
+                />
+              </li>
+              <li class="form__item">
+                <label class="form__data">Фамилия:</label>
+                <input
+                  class="form__input form__input-lastname"
+                  type="text"
+                  name="lastname"
+                  placeholder="Введите вашу фамилию*"
+                />
+              </li>
+              <li class="form__item">
+                <label class="form__data">Отчество:</label>
+                <input
+                  class="form__input form__input-middlename"
+                  type="text"
+                  name="middlename"
+                  placeholder="Отчество, если желаете"
+                />
+              </li>
+            </ul>
           </div>
-          <!-- ТЕЛЕФОН -->
-          <div class="form__container">
+        </div>
+        <!-- ТЕЛЕФОН -->
+        <div class="form__contacts">
+          <div class="container form__container">
             <div class="form__type form__type--phone">
               <label class="form__title"
                 >ТЕЛ
@@ -209,8 +215,10 @@
               </label>
             </div>
           </div>
-          <!-- EMAIL -->
-          <div class="form__container">
+        </div>
+        <!-- EMAIL -->
+        <div class="form__contacts">
+          <div class="container form__container">
             <div class="form__type form__type--mail">
               <label class="form__title"
                 >E-MAIL
@@ -223,64 +231,61 @@
               </label>
             </div>
           </div>
-          <!-- ПОЛЕ ВВОДА -->
-          <div class="form__container">
-            <div class="form__type form__type--textarea">
-              <label class="form__title" for="comment-field">ДОП</label>
-              <textarea
-                class="form__comment-field"
-                name="comment"
-                id="comment-field"
-                rows="7"
-                placeholder="Опишите все ваши пожелания к заказу"
-                required
-              >
+        </div>
+        <!-- ПОЛЕ ВВОДА -->
+        <div class="container form__container">
+          <div class="form__type form__type--textarea">
+            <label class="form__title" for="comment-field">ДОП</label>
+            <textarea
+              class="form__comment-field"
+              name="comment"
+              id="comment-field"
+              rows="7"
+              placeholder="Опишите все ваши пожелания к заказу"
+              required
+            >
 Опишите все ваши пожелания к заказу
-              </textarea>
-              <p class="form__text">*Поля обязательны для заполнения</p>
-            </div>
-          </div>
-          <div class="form__container">
-            <div class="form__type form__type--button">
-              <input
-                class="form__button"
-                type="submit"
-                value="Отправить заказ"
-              />
-            </div>
-          </div>
-        </form>
-      </main>
-      <!-- КОНЕЦ ФОРМЫ -->
-      <footer class="main-footer">
-        <div class="main-footer__wrapper">
-          <div class="main-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vk" href="#">Вконтакте</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--yt" href="#">Ютуб</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--tg" href="#">Телеграм</a>
-              </li>
-            </ul>
-          </div>
-          <div class="main-footer__copyright copyright">
-            <b class="copyright__text">Разработано</b>
-            <a class="copyright__link" href="https://htmlacademy.ru">
-              <img
-                class="main-footer__logo-image"
-                src="img/htmlacademy-logo.svg"
-                width="27"
-                height="35"
-                alt="HTML-academy"
-              />
-            </a>
+              </textarea
+            >
+            <p class="form__text">*Поля обязательны для заполнения</p>
           </div>
         </div>
-      </footer>
-    </div>
+        <div class="container form__container">
+          <div class="form__type form__type--button">
+            <input class="form__button" type="submit" value="Отправить заказ" />
+          </div>
+        </div>
+      </form>
+    </main>
+    <!-- КОНЕЦ ФОРМЫ -->
+    <footer class="main-footer">
+      <div class="container main-footer__wrapper">
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--yt" href="#">Ютуб</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tg" href="#">Телеграм</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru">
+            <img
+              class="main-footer__logo-image"
+              src="img/htmlacademy-logo.svg"
+              width="27"
+              height="35"
+              alt="HTML-academy"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

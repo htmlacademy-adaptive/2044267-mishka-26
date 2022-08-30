@@ -3,6 +3,19 @@
   background-color: #ffffff;
 }
 
+.goods__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
 .goods__title {
   font-weight: 700;
   font-size: 25px;

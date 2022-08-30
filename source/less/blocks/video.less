@@ -2,8 +2,20 @@
   color: #000000;
   background-color: #ffffff;
   box-sizing: border-box;
+}
+
+.video__wrapper {
+  margin: 0 auto;
   border: 1px solid #ececec;
-  margin-left: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
 .video__title {
@@ -11,7 +23,6 @@
   font-size: 17px;
   line-height: 24px;
   color: #000000;
-  margin-left: 91px;
 }
 
 .video__text {

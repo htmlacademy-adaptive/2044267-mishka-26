@@ -3,8 +3,32 @@
   background-color: #ffffff;
 }
 
+.catalog-products__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
 .catalog-products__list {
   list-style: none;
+  padding-left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 316px 316px 316px;
+  }
 }
 
 .catalog-products__item {
