@@ -1,11 +1,14 @@
 .main-header {
-  display: flex;
-  flex-direction: column;
   color: #000000;
   background-color: #ffffff;
+  width: 100%;
+}
+
+.main-header__wrapper {
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
+    width: 100%;
   }
 
   @media (min-width: @desktop-width) {
@@ -23,6 +26,5 @@
 
   @media (min-width: @desktop-width) {
     order: 3;
-    height: 149px;
   }
 }
