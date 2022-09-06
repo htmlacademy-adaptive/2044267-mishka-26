@@ -1,7 +1,30 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  min-height: 79px;
+  padding-left: 33px;
+  padding-right: 33px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 668px;
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1150px;
+  }
+}
+
 .copyright__text {
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
   color: #000000;
-  margin-left: 69px;
+  padding: 0 27px 0 0;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }

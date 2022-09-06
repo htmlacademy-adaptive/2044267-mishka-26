@@ -16,15 +16,58 @@
   }
 }
 
+.main-header__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 79px;
+}
+
 .main-header__logo-image {
+  width: 86px;
   height: 35px;
+  text-align: center;
+}
+
+.main-header__title-wrapper {
+  padding-top: 73px;
+  padding-bottom: 120px;
+  background-color: #ffffff;
+  background-image: url(../img/hero-main.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  // background-size: 567px 373px;
 
   @media (min-width: @tablet-width) {
-    order: 1;
-    height: 46px;
+    width: 100%;
+    padding-top: 110px;
+    padding-bottom: 120px;
   }
 
   @media (min-width: @desktop-width) {
-    order: 3;
+    width: 100%;
+    padding-top: 114px;
+    // padding-bottom: 355px;
+  }
+}
+
+.main-header__title {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    font-size: 53px;
+    line-height: 57px;
   }
 }

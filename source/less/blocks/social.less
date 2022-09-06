@@ -1,5 +1,22 @@
 .social__list {
+  margin: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 89px 28px 89px;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    width: 142px;
+    margin: 0 0 0 122px;
+    border: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 142px;
+    margin-left: 312px;
+  }
 }
 
 .social__link {

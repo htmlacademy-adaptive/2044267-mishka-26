@@ -3,17 +3,15 @@
   background-color: #ffffff;
 }
 
-.about__wrapper {
+.about__main {
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
-    padding: 0 191px;
+    width: 668px;
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
-    padding: 0 225px;
+    width: 700px;
   }
 }
 
@@ -22,22 +20,115 @@
   font-size: 25px;
   line-height: 30px;
   color: #000000;
+  margin: 31px 0 28px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 68px;
+  }
 }
 
 .about__list {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   list-style: none;
   color: #000000;
-  padding-left: 0;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 50px;
-    padding-right: 58px;
+    // width: 100%;
+    font-size: 20px;
+    line-height: 22px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+  }
+}
+
+.about__item {
+  position: relative;
+  margin: 0;
+  padding: 55px 0 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 334px;
+    padding: 53px 0 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 350px;
+    // padding: 51px 0 56px;
+  }
+}
+
+.about__item--flower {
+  background-image: url(../img/icon-flower.svg);
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+}
+
+.about__item--price {
+  background-image: url(../img/icon-price.svg);
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+  }
+}
+
+.about__item--like {
+  background-image: url(../img/icon-like.svg);
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    order: 5;
+  }
+}
+
+.about__item--tangle {
+  background-image: url(../img/icon-tangle.svg);
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    background-repeat: no-repeat;
+  }
+}
+
+.about__item--rocket {
+  background-image: url(../img/icon-rocket.svg);
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    order: 4;
+  }
+}
+
+.about__item--present {
+  background-image: url(../img/icon-present.svg);
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    order: 6;
   }
 }
 
