@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <base href="https://htmlacademy-adaptive.github.io/2044267-mishka-26/6/">
+</head>
+  <body class="page__body">
+    <header class="main-header">
+      <div class="container">
+        <a class="main-header__logo" href="index.html">
+          <img
+            class="main-header__logo-image"
+            src="img/mishka-logo.svg"
+            width="86"
+            height="35"
+            alt="Мишка"
+          />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <div class="container main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                Каталог товаров</a
+              >
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="catalog">
+      <section class="page__title">
+        <h1 class="container page__title">Каталог товаров</h1>
+      </section>
+      <section class="catalog-products">
+        <div class="container">
+          <ul class="catalog-products__list">
+            <li class="catalog-products__item">
+              <a class="catalog-products__card" href="#">
+                <img
+                  class="catalog-products__image"
+                  width="260"
+                  height="195"
+                  src="img/bunny.svg"
+                  alt="Зайчик"
+                />
+              </a>
+              <div class="catalog-products__info">
+                <a class="catalog-products__title" href="#"
+                  >Зайчик-попрыгайчик
+                </a>
+                <p class="catalog-products__text">Рост 30 см, вес 200 г</p>
+                <div class="catalog-products__wrapper">
+                  <b class="catalog-products__price">1200 руб.</b>
+                  <a class="catalog-products__order" href="#"></a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-products__item">
+              <a class="catalog-products__card" href="#">
+                <img
+                  class="catalog-products__image"
+                  width="260"
+                  height="195"
+                  src="img/basket.svg"
+                  alt="Корзинка"
+                />
+              </a>
+              <div class="catalog-products__info">
+                <a class="catalog-products__title" href="#"
+                  >Корзинка для белья
+                </a>
+                <p class="catalog-products__text">
+                  Диаметр 15 см, высота 10 см
+                </p>
+                <div class="catalog-products__wrapper">
+                  <b class="catalog-products__price">690 руб.</b>
+                  <a class="catalog-products__order" href="#"></a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-products__item">
+              <a class="catalog-products__card" href="#">
+                <img
+                  class="catalog-products__image"
+                  width="260"
+                  height="195"
+                  src="img/toys.svg"
+                  alt="Игрушки"
+                />
+              </a>
+              <div class="catalog-products__info">
+                <a class="catalog-products__title" href="#">
+                  Большая корзинка для игрушек
+                </a>
+                <p class="catalog-products__text">
+                  Диаметр 30 см, высота 30 см
+                </p>
+                <div class="catalog-products__wrapper">
+                  <b class="catalog-products__price">1500 руб.</b>
+                  <a class="catalog-products__order" href="#"></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="video container">
+        <div class="video__wrapper">
+          <h2 class="video__title">Процесс производства</h2>
+          <div class="video__static-image">
+            <img
+              class="video__play"
+              width="260"
+              height="150"
+              src="img/video.svg"
+              alt="Видео"
+            />
+          </div>
+          <div class="video__production">
+            <button class="video__production-play" type="button">
+              <span class="visually-hidden">Play</span>
+            </button>
+          </div>
+          <div class="video__content">
+            <p class="video__text">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное
+              видео о том, как появляются наши товары.
+            </p>
+            <a class="video__order button" href="#">Сделать заказ</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container main-footer__wrapper">
+        <div class="main-footer__logo-wrapper">
+          <a class="main-footer__logo" href="#">
+            <svg class="main-footer__icon" width="102" height="34"></svg>
+          </a>
+        </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">
+                <!-- <span class="visually-hidden">Вконтакте</span> -->
+                <svg class="social__icon" width="27" height="18"></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--yt" href="#">
+                <!-- <span class="visually-hidden">Ютуб</span> -->
+                <svg class="social__icon" width="24" height="20"></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tg" href="#">
+                <!-- <span class="visually-hidden">Телеграм</span> -->
+                <svg class="social__icon" width="20" height="18"></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <!-- <b class="copyright__text">Разработано</b> -->
+          <a class="copyright__link" href="https://htmlacademy.ru">
+            <span class="copyright__text">Разработано</span>
+            <img
+              class="main-footer__logo-image"
+              src="img/htmlacademy-logo.svg"
+              width="27"
+              height="35"
+              alt="HTML-academy"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="modal modal--shop">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="form" action="/action_page.php" method="post">
+        <ul class="modal__list">
+          <li class="modal__item">
+            <fieldset class="form__fieldset">
+              <label class="form__label form__label--text"
+                >S
+                <input
+                  class="form__control form__control--text"
+                  type="submit"
+                  name="size"
+                  value="S"
+                />
+              </label>
+            </fieldset>
+          </li>
+          <li class="modal__item">
+            <fieldset class="form__fieldset">
+              <label class="form__label form__label--text"
+                >M
+                <input
+                  class="form__control form__control--text"
+                  type="submit"
+                  name="size"
+                  value="M"
+                />
+              </label>
+            </fieldset>
+          </li>
+          <li class="modal__item">
+            <fieldset class="form__fieldset">
+              <label class="form__label form__label--text"
+                >L
+                <input
+                  class="form__control form__control--text"
+                  type="submit"
+                  name="size"
+                  value="L"
+                />
+              </label>
+            </fieldset>
+          </li>
+        </ul>
+        <input class="modal__button" type="submit" value="Добавить" />
+      </form>
+    </div>
+  </body>
+</html>
