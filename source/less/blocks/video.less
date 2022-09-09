@@ -6,16 +6,49 @@
 
 .video__wrapper {
   margin: 0 auto;
+  position: relative;
   display: flex;
   flex-direction: column;
   border: 1px solid #ececec;
 
+  @media (min-width: @desktop-width) {
+    align-items: flex-end;
+  }
+}
+
+.video__title-wpapper {
+  position: relative;
+  padding: 22px 13px 27px 91px;
+
   @media (min-width: @tablet-width) {
-    width: 100%;
+    padding-left: 107px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
+    width: 367px;
+    padding: 96px 110px 0px 79px;
+  }
+}
+
+.video__title-wpapper::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 34px;
+  width: 32px;
+  height: 22px;
+  background-image: url(../img/icon-camera.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: @tablet-width) {
+    top: 39px;
+    left: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 47px;
+    left: 79px;
   }
 }
 
@@ -24,23 +57,70 @@
   font-size: 17px;
   line-height: 24px;
   color: #000000;
-  margin: 0;
-  padding: 22px 0 27px 91px;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
     font-size: 20px;
-    order: 1;
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
+    margin: 0;
+  }
+}
+
+.video__player-container {
+  position: relative;
+  border: 1px solid #ececec;
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+    height: 455px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 682px;
+  }
+}
+
+.video__play {
+  border-style: none;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.video__production-play {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  background: 0 0;
+  border: 0;
+
+  @media (min-width: @tablet-width) {
+    top: 40%;
+    left: 40%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 40%;
+    left: 40%;
   }
 }
 
 .video__content {
   margin: 0;
   padding: 13px 34px 33px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 17px 41px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 367px;
+    padding: 27px 36px 51px 79px;
+  }
 }
 
 .video__text {
@@ -51,13 +131,13 @@
   margin: 16px 0 41px;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
     font-size: 15px;
     line-height: 30px;
+    margin-top: 8px;
+    margin-bottom: 41px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
     margin-bottom: 52px;
   }
 }
