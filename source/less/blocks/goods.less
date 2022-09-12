@@ -133,7 +133,7 @@
   height: 315px;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
+    // position: absolute;
     top: 492px;
     right: 0;
     width: 334px;
@@ -141,9 +141,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
+    // position: absolute;
     top: 54px;
-    z-index: -1;
+    z-index: 1;
     width: 525px;
     height: 636px;
   }
@@ -208,6 +208,8 @@
   background-image: url(../img/zigzag-products.svg);
   background-position: 8px 0;
   background-size: 320px 7px;
+  // bottom: 0;
+  // left: 0;
 
   @media (min-width: @tablet-width) {
     height: 17px;
