@@ -90,7 +90,6 @@
           <button class="main-nav__toggle toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-
           <!-- </div> -->
           <ul class="main-nav__promo-list">
             <li class="main-nav__promo-item main-nav__promo-item--delivery">
@@ -143,13 +142,14 @@
         </ul>
         <!-- </div> -->
       </section>
-      <section class="goods">
-        <div class="container">
-          <div class="goods__wrapper">
-            <header class="goods__header">
-              <h2 class="goods__title">Вязаные корзинки</h2>
-              <span class="goods__subtitle">Товар недели</span>
-            </header>
+      <section class="goods zig-zag">
+        <!-- <div class="container"> -->
+        <div class="goods__wrapper">
+          <header class="goods__header">
+            <h2 class="goods__title">Вязаные корзинки</h2>
+            <span class="goods__subtitle">Товар недели</span>
+          </header>
+          <div class="goods__info">
             <p class="goods__description">
               Экологически чистая пряжа, <br />ручная работа. Доступны в шести
               <br />расцветках и трёх размерах.
@@ -182,21 +182,22 @@
                 </tr>
               </tbody>
             </table>
-            <div class="goods__image">
-              <img
-                class="goods__basket"
-                src="img/goodsbasket.svg"
-                width="260"
-                height="315"
-                alt="Вязанная корзинка"
-              />
-            </div>
-            <footer class="goods__footer">
-              <p class="goods__price">Цена: 990 руб.</p>
-              <a class="goods__order button" href="form.html">Заказать</a>
-            </footer>
           </div>
+          <div class="goods__image-wrapper">
+            <img
+              class="goods__basket"
+              src="img/goodsbasket.svg"
+              width="260"
+              height="315"
+              alt="Вязанная корзинка"
+            />
+          </div>
+          <footer class="goods__footer">
+            <p class="goods__price">Цена: 990 руб.</p>
+            <a class="goods__order button" href="form.html">Заказать</a>
+          </footer>
         </div>
+        <!-- </div> -->
       </section>
       <section class="about">
         <div class="container">
@@ -297,49 +298,47 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="container">
-          <div class="contacts__wrapper">
-            <h2 class="contacts__title">Контакты</h2>
-            <div class="contacts__list">
-              <div class="contacts__item">
-                <div class="contacts__item-title">e-mail:</div>
-                <div class="contacts__item-text">
+        <!-- <div class="container"> -->
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2>
+          <table class="contacts__table contacts-table">
+            <tbody class="contacts__tbody">
+              <tr class="contacts-table__row">
+                <td class="contacts-table__cell contacts-table__cell-item">
+                  e-mail:
+                </td>
+                <td class="contacts-table__cell contacts-table__cell-value">
                   <a
-                    class="contacts__email"
+                    class="contacts-table__link"
                     href="mailto:info@mimimishkashop.ru"
                     >info@mimimishkashop.ru</a
                   >
-                </div>
-              </div>
-              <div class="contacts__item">
-                <div class="contacts__item-title">адрес:</div>
-                <div class="contacts__item-text">
+                </td>
+              </tr>
+              <tr class="contacts-table__row">
+                <td class="contacts-table__cell contacts-table__cell-item">
+                  адрес:
+                </td>
+                <td class="contacts-table__cell contacts-table__cell-value">
                   г. Санкт-Петербург<br />
                   ул. Большая Конюшенная<br />
                   д. 19/8, офис 101
-                </div>
-              </div>
-            </div>
-            <div class="contacts-map">
-              <!-- <div class="contacts-map__wrapper"> -->
-              <!-- <div class="map"> -->
-              <iframe
-                src="https://yandex.ru/map-widget/v1/-/CCUVUOsPpD"
-                width="560"
-                height="400"
-                frameborder="1"
-                allowfullscreen="true"
-              ></iframe>
-              <!-- </div> -->
-              <!-- </div> -->
-              <!-- <div class="container contacts-button"> -->
-              <a class="contacts-button__write-us button" href="#"
-                >Напишите нам</a
-              >
-              <!-- </div> -->
-            </div>
-          </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+        <div class="contacts__map-wrapper">
+          <iframe
+            class="contacts__map"
+            src="https://yandex.ru/map-widget/v1/-/CCUVUOsPpD"
+            width="560"
+            height="400"
+            frameborder="1"
+            allowfullscreen="true"
+          ></iframe>
+        </div>
+        <a class="contacts-button__write-us button" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="main-footer">
@@ -348,28 +347,28 @@
           <div class="main-footer__logo">
             <a class="main-footer__logo-link" href="index.html"></a>
           </div>
-          <div class="main-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vk" href="#">
-                  <!-- <span class="visually-hidden">Вконтакте</span> -->
-                  <svg class="social__icon" width="27" height="18"></svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--yt" href="#">
-                  <!-- <span class="visually-hidden">Ютуб</span> -->
-                  <svg class="social__icon" width="24" height="20"></svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--tg" href="#">
-                  <!-- <span class="visually-hidden">Телеграм</span> -->
-                  <svg class="social__icon" width="20" height="18"></svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <!-- <div class="main-footer__social social"> -->
+          <ul class="main-footer__list social">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">
+                <!-- <span class="visually-hidden">Вконтакте</span> -->
+                <svg class="social__icon" width="27" height="18"></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--yt" href="#">
+                <!-- <span class="visually-hidden">Ютуб</span> -->
+                <svg class="social__icon" width="24" height="20"></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tg" href="#">
+                <!-- <span class="visually-hidden">Телеграм</span> -->
+                <svg class="social__icon" width="20" height="18"></svg>
+              </a>
+            </li>
+          </ul>
+          <!-- </div> -->
           <div class="main-footer__copyright copyright">
             <!-- <b class="copyright__text">Разработано</b> -->
             <a class="copyright__link" href="https://htmlacademy.ru">
