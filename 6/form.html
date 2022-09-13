@@ -45,18 +45,20 @@
       </nav>
     </header>
     <main class="main">
-      <div class="page__title">
-        <h1 class="container page__title">Вязание на заказ</h1>
+      <section class="page__title">
+        <h1 class="page__title-label">Вязание на заказ</h1>
+      </section>
+      <div class="container">
+        <p class="page__description">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
+          форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
       </div>
-      <p class="container page__description">
-        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
-        заказа и мы свяжемся с вами, чтобы уточнить детали.
-      </p>
       <!-- ФОРМА -->
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="container form__container">
           <div class="form__type form__type--radio">
-            <h2 class="form__title">Тип</h2>
+            <h2 class="form__title form__title--type">Тип</h2>
             <ul class="form__list">
               <li class="form__item">
                 <input
@@ -86,7 +88,7 @@
         </div>
         <div class="form__color">
           <div class="container form__container">
-            <h2 class="form__title">Цвет</h2>
+            <h2 class="form__title form__title--color">Цвет</h2>
             <div class="form__type form__type--checkbox">
               <ul class="form__list">
                 <li class="form__item">
@@ -168,7 +170,7 @@
         </div>
         <!-- ФИО -->
         <div class="container form__container">
-          <h2 class="form__title">ФИО</h2>
+          <h2 class="form__title form__title--data">ФИО</h2>
           <div class="form__type form__type--name">
             <ul class="form__list">
               <li class="form__item">
@@ -205,7 +207,7 @@
         <div class="form__contacts">
           <div class="container form__container">
             <div class="form__type form__type--phone">
-              <label class="form__title"
+              <label class="form__title form__title--tel"
                 >ТЕЛ
                 <input
                   class="form__input form__input-phone"
@@ -221,7 +223,7 @@
         <div class="form__contacts">
           <div class="container form__container">
             <div class="form__type form__type--mail">
-              <label class="form__title"
+              <label class="form__title form__title--mail"
                 >E-MAIL
                 <input
                   class="form__input form__input-mail"
@@ -236,12 +238,14 @@
         <!-- ПОЛЕ ВВОДА -->
         <div class="container form__container">
           <div class="form__type form__type--textarea">
-            <label class="form__title" for="comment-field">ДОП</label>
+            <label class="form__title form__title--add" for="comment-field"
+              >ДОП</label
+            >
             <textarea
               class="form__comment-field"
               name="comment"
               id="comment-field"
-              rows="7"
+              rows="5"
               placeholder="Опишите все ваши пожелания к заказу"
               required
             >
@@ -252,7 +256,7 @@
           </div>
         </div>
         <div class="container form__container">
-          <div class="form__type form__type--button">
+          <div class="form__submit form__type--button">
             <input class="form__button" type="submit" value="Отправить заказ" />
           </div>
         </div>

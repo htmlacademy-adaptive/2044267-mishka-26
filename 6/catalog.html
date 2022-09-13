@@ -46,7 +46,7 @@
     </header>
     <main class="catalog">
       <section class="page__title">
-        <h1 class="container page__title">Каталог товаров</h1>
+        <h1 class="page__title-label">Каталог товаров</h1>
       </section>
       <section class="catalog-products">
         <div class="container">
@@ -123,8 +123,10 @@
       </section>
       <section class="video container">
         <div class="video__wrapper">
-          <h2 class="video__title">Процесс производства</h2>
-          <div class="video__static-image">
+          <div class="video__title-wpapper">
+            <h2 class="video__title">Процесс производства</h2>
+          </div>
+          <div class="video__player-container">
             <img
               class="video__play"
               width="260"
@@ -132,10 +134,10 @@
               src="img/video.svg"
               alt="Видео"
             />
-          </div>
-          <div class="video__production">
             <button class="video__production-play" type="button">
-              <span class="visually-hidden">Play</span>
+              <span>
+                <img src="img/play.svg" alt="Play" />
+              </span>
             </button>
           </div>
           <div class="video__content">
@@ -159,26 +161,22 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vk" href="#">
-                <!-- <span class="visually-hidden">Вконтакте</span> -->
                 <svg class="social__icon" width="27" height="18"></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--yt" href="#">
-                <!-- <span class="visually-hidden">Ютуб</span> -->
                 <svg class="social__icon" width="24" height="20"></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--tg" href="#">
-                <!-- <span class="visually-hidden">Телеграм</span> -->
                 <svg class="social__icon" width="20" height="18"></svg>
               </a>
             </li>
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <!-- <b class="copyright__text">Разработано</b> -->
           <a class="copyright__link" href="https://htmlacademy.ru">
             <span class="copyright__text">Разработано</span>
             <img
@@ -193,52 +191,51 @@
       </div>
     </footer>
     <div class="modal modal--shop">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__text">Выберите размер:</p>
-      <form class="form" action="/action_page.php" method="post">
-        <ul class="modal__list">
-          <li class="modal__item">
-            <fieldset class="form__fieldset">
-              <label class="form__label form__label--text"
-                >S
-                <input
-                  class="form__control form__control--text"
-                  type="submit"
-                  name="size"
-                  value="S"
-                />
-              </label>
-            </fieldset>
-          </li>
-          <li class="modal__item">
-            <fieldset class="form__fieldset">
-              <label class="form__label form__label--text"
-                >M
-                <input
-                  class="form__control form__control--text"
-                  type="submit"
-                  name="size"
-                  value="M"
-                />
-              </label>
-            </fieldset>
-          </li>
-          <li class="modal__item">
-            <fieldset class="form__fieldset">
-              <label class="form__label form__label--text"
-                >L
-                <input
-                  class="form__control form__control--text"
-                  type="submit"
-                  name="size"
-                  value="L"
-                />
-              </label>
-            </fieldset>
-          </li>
-        </ul>
-        <input class="modal__button" type="submit" value="Добавить" />
-      </form>
+      <div class="modal__fade"></div>
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form class="modal__form" action="/action_page.php" method="post">
+          <div class="modal__form-group">
+            <p class="modal__text">Выберите размер:</p>
+            <div class="modal__inner">
+              <fieldset class="modal__form-fieldset">
+                <label class="modal__form-label modal__form-label--text"
+                  >S
+                  <input
+                    class="modal__form-control modal__form-control--text"
+                    type="submit"
+                    name="size"
+                    value="S"
+                  />
+                </label>
+              </fieldset>
+              <fieldset class="modal__form-fieldset">
+                <label class="modal__form-label modal__form-label--text"
+                  >M
+                  <input
+                    class="modal__form-control modal__form-control--text"
+                    type="submit"
+                    name="size"
+                    value="M"
+                  />
+                </label>
+              </fieldset>
+              <fieldset class="modal__form-fieldset">
+                <label class="modal__form-label modal__form-label--text"
+                  >L
+                  <input
+                    class="modal__form-control modal__form-control--text"
+                    type="submit"
+                    name="size"
+                    value="L"
+                  />
+                </label>
+              </fieldset>
+            </div>
+          </div>
+          <input class="modal__button" type="submit" value="Добавить" />
+        </form>
+      </div>
     </div>
   </body>
 </html>
