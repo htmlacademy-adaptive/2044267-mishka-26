@@ -1,31 +1,31 @@
 .copyright {
-  display: flex;
-  align-items: center;
-  min-height: 79px;
-  padding-left: 33px;
-  padding-right: 33px;
+  margin: 0;
+  padding: 25px 0 31px 39px;
+  border-top: 1px solid #ececec;
 
   @media (min-width: @tablet-width) {
-    max-width: 668px;
-    margin-left: auto;
-    padding: 13px 0 0;
+    border: 0;
+    padding: 10px 56px 0 0;
   }
-
-  @media (min-width: @desktop-width) {
-    max-width: 1150px;
-  }
-}
-
-.copyright__text {
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 18px;
-  color: #000000;
-  padding: 0 27px 0 0;
 }
 
 .copyright__link {
-  display: flex;
-  align-items: center;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  position: relative;
+  margin: 0;
+  padding: 0;
   text-decoration: none;
+  color: #000000;
+}
+
+.copyright__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -56px;
+  width: 27px;
+  height: 34px;
+  background-image: url(../img/htmlacademy-logo.svg);
 }

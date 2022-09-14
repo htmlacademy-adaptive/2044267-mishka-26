@@ -4,6 +4,7 @@
 }
 
 .about__wrapper {
+  position: relative;
   width: 260px;
   margin: 0 auto;
   padding: 31px 0 0;
@@ -39,9 +40,6 @@
 }
 
 .about__list {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 20px;
   list-style: none;
   color: #000000;
   display: flex;
@@ -50,8 +48,6 @@
   padding: 28px 0 0;
 
   @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 22px;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 49px 0 0;
@@ -137,4 +133,9 @@
   font-size: 17px;
   line-height: 20px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }

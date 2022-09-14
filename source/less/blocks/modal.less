@@ -53,6 +53,7 @@
 .modal__form {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 19px;
 
   @media (min-width: @tablet-width) {
     width: 350px;
@@ -90,7 +91,8 @@
 .modal__form-fieldset {
   display: inline-block;
   margin-right: 1px;
-  border: #444444;
+  border: 0;
+  padding: 0;
 }
 
 .modal__form-label {
@@ -101,6 +103,8 @@
   min-height: 52px;
   border: 2px solid #444444;
   opacity: 0.1;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     min-width: 112px;
@@ -121,6 +125,7 @@
   width: 0;
   height: 0;
   opacity: 0;
+  cursor: pointer;
 }
 
 .modal__button {

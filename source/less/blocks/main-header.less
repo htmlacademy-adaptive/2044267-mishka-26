@@ -1,7 +1,14 @@
 .main-header {
   color: #000000;
-  background-color: #ffffff;
+  // background-color: #ffffff;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(#fff 88px, #ececec 2px, transparent 90px);
+    background-color: #fafafa;
+    background-repeat: no-repeat;
+    background-size: 100% 176px;
+  }
 }
 
 .main-header__inner {
@@ -19,6 +26,7 @@
   @media (min-width: @tablet-width) {
     order: 1;
     height: 88px;
+    // width: 320;
   }
 
   @media (min-width: @desktop-width) {
@@ -59,22 +67,28 @@
 }
 
 .main-header__title-wrapper {
-  padding-top: 73px;
-  padding-bottom: 120px;
+  padding: 70px 30px 77px;
   background-color: #ffffff;
-  background-image: url(../img/hero-main.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
-    padding-top: 110px;
-    padding-bottom: 120px;
+    padding-top: 36px;
+    padding-bottom: 92px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
-    padding-top: 114px;
+    padding-top: 118px;
+    padding-bottom: auto 34px;
+  }
+}
+
+.main-header__title-wrapper--index {
+  padding-bottom: 120px;
+  background-image: url(../img/hero-main.jpg);
+  background-repeat: no-repeat;
+  background-position: center -18px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 94px;
   }
 }
 
@@ -87,13 +101,11 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    width: 668px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 700px;
     font-size: 53px;
     line-height: 57px;
     margin: 0 auto;
