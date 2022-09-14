@@ -1,20 +1,35 @@
 .feedback {
   color: #000000;
   background-color: #ffffff;
-}
-
-.feedback__wrapper {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
-    padding: 0 50px;
+    background-image: url(../img/review.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 26px;
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
+    max-width: 1150px;
+    margin: auto;
+    padding-bottom: 48px;
+    background-position: 49px 34px;
+  }
+}
+
+.feedback__wrapper {
+  position: relative;
+  max-width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 668px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1050px;
   }
 }
 
@@ -23,7 +38,32 @@
   font-size: 25px;
   line-height: 30px;
   color: #000000;
-  margin-left: 30px;
+  margin: 27px 0 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 104px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 175px;
+  }
+}
+
+.feedback__quotation {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 113px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 105px;
+    margin-left: 175px;
+  }
 }
 
 .feedback__text {
@@ -31,28 +71,101 @@
   font-size: 15px;
   line-height: 30px;
   color: #444444;
+  margin: 14px 0 33px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    margin-top: 39px;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 44px;
+  }
+}
+
+.feedback__author {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
 }
 
 .feedback__author-name {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  font-style: normal;
   color: #000000;
+  display: block;
+  margin-bottom: 2px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .feedback__author-nickname {
   font-weight: 400;
-  font-size: 15px;
-  line-height: 30px;
+  font-size: 17px;
+  line-height: 24px;
+  font-style: normal;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 17px;
+  }
+}
+
+.feedback-toggles {
+  display: flex;
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    right: 7px;
+    bottom: 79px;
+    width: 167px;
+  }
+}
+
+.feedback-toggles__button {
+  width: 50%;
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: 1px solid #ececec;
+  cursor: pointer;
+  background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    border: 0;
+  }
 }
 
 .feedback__write {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
   color: #444444;
+  margin-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    width: 175px;
+    position: absolute;
+    top: 106px;
+    right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 113px;
+  }
 }

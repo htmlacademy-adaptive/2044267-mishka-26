@@ -44,11 +44,11 @@
       </nav>
     </header>
     <main class="catalog">
-      <div class="page__title">
-        <h1 class="container page__title">Каталог товаров</h1>
-      </div>
+      <section class="page__title">
+        <h1 class="page__title-label">Каталог товаров</h1>
+      </section>
       <section class="catalog-products">
-        <div class="container catalog-products__wrapper">
+        <div class="container">
           <ul class="catalog-products__list">
             <li class="catalog-products__item">
               <a class="catalog-products__card" href="#">
@@ -60,12 +60,16 @@
                   alt="Зайчик"
                 />
               </a>
-              <a class="catalog-products__link">
-                <h3 class="catalog-products__title">Зайчик-попрыгайчик</h3>
-              </a>
-              <p class="catalog-products__text">Рост 30 см, вес 200 г</p>
-              <b class="catalog-products__price">1200 руб.</b>
-              <a class="catalog-products__order" href="#"></a>
+              <div class="catalog-products__info">
+                <a class="catalog-products__title" href="#"
+                  >Зайчик-попрыгайчик
+                </a>
+                <p class="catalog-products__text">Рост 30 см, вес 200 г</p>
+                <div class="catalog-products__wrapper">
+                  <b class="catalog-products__price">1200 руб.</b>
+                  <a class="catalog-products__order" href="#"></a>
+                </div>
+              </div>
             </li>
             <li class="catalog-products__item">
               <a class="catalog-products__card" href="#">
@@ -77,12 +81,18 @@
                   alt="Корзинка"
                 />
               </a>
-              <a class="catalog-products__link">
-                <h3 class="catalog-products__title">Корзинка для белья</h3>
-              </a>
-              <p class="catalog-products__text">Диаметр 15 см, высота 10 см</p>
-              <b class="catalog-products__price">690 руб.</b>
-              <a class="catalog-products__order" href="#"></a>
+              <div class="catalog-products__info">
+                <a class="catalog-products__title" href="#"
+                  >Корзинка для белья
+                </a>
+                <p class="catalog-products__text">
+                  Диаметр 15 см, высота 10 см
+                </p>
+                <div class="catalog-products__wrapper">
+                  <b class="catalog-products__price">690 руб.</b>
+                  <a class="catalog-products__order" href="#"></a>
+                </div>
+              </div>
             </li>
             <li class="catalog-products__item">
               <a class="catalog-products__card" href="#">
@@ -94,22 +104,28 @@
                   alt="Игрушки"
                 />
               </a>
-              <a class="catalog-products__link">
-                <h3 class="catalog-products__title">
+              <div class="catalog-products__info">
+                <a class="catalog-products__title" href="#">
                   Большая корзинка для игрушек
-                </h3>
-              </a>
-              <p class="catalog-products__text">Диаметр 30 см, высота 30 см</p>
-              <b class="catalog-products__price">1500 руб.</b>
-              <a class="catalog-products__order" href="#"></a>
+                </a>
+                <p class="catalog-products__text">
+                  Диаметр 30 см, высота 30 см
+                </p>
+                <div class="catalog-products__wrapper">
+                  <b class="catalog-products__price">1500 руб.</b>
+                  <a class="catalog-products__order" href="#"></a>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="video container">
         <div class="video__wrapper">
-          <h2 class="video__title">Процесс производства</h2>
-          <div class="video__static-image">
+          <div class="video__title-wpapper">
+            <h2 class="video__title">Процесс производства</h2>
+          </div>
+          <div class="video__player-container">
             <img
               class="video__play"
               width="260"
@@ -117,96 +133,87 @@
               src="img/video.svg"
               alt="Видео"
             />
-          </div>
-          <div class="video__production">
             <button class="video__production-play" type="button">
-              <span class="visually-hidden">Play</span>
+              <span>
+                <img src="img/play.svg" alt="Play" />
+              </span>
             </button>
           </div>
-          <p class="video__text">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное
-            видео о том, как появляются наши товары.
-          </p>
-          <a class="video__order" href="#">Сделать заказ</a>
+          <div class="video__content">
+            <p class="video__text">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное
+              видео о том, как появляются наши товары.
+            </p>
+            <a class="video__order button" href="#">Сделать заказ</a>
+          </div>
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="container main-footer__wrapper">
-        <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="#">Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--yt" href="#">Ютуб</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--tg" href="#">Телеграм</a>
-            </li>
-          </ul>
+      <!-- <div class="container"> -->
+      <div class="main-footer__wrapper">
+        <div class="main-footer__logo">
+          <a class="main-footer__logo-link" href="index.html"></a>
         </div>
-        <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru">
-            <img
-              class="main-footer__logo-image"
-              src="img/htmlacademy-logo.svg"
-              width="27"
-              height="35"
-              alt="HTML-academy"
-            />
+        <div class="social">
+          <a class="social__link social__link--vk" href="#"> </a>
+          <a class="social__link social__link--yt" href="#"> </a>
+          <a class="social__link social__link--tg" href="#"> </a>
+        </div>
+        <div class="copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru"
+            >Разработано
           </a>
         </div>
       </div>
+      <!-- </div> -->
     </footer>
     <div class="modal modal--shop">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__text">Выберите размер:</p>
-      <form class="form" action="/action_page.php" method="post">
-        <ul class="modal__list">
-          <li class="modal__item">
-            <fieldset class="form__fieldset">
-              <label class="form__label form__label--text"
-                >S
-                <input
-                  class="form__control form__control--text"
-                  type="submit"
-                  name="size"
-                  value="S"
-                />
-              </label>
-            </fieldset>
-          </li>
-          <li class="modal__item">
-            <fieldset class="form__fieldset">
-              <label class="form__label form__label--text"
-                >M
-                <input
-                  class="form__control form__control--text"
-                  type="submit"
-                  name="size"
-                  value="M"
-                />
-              </label>
-            </fieldset>
-          </li>
-          <li class="modal__item">
-            <fieldset class="form__fieldset">
-              <label class="form__label form__label--text"
-                >L
-                <input
-                  class="form__control form__control--text"
-                  type="submit"
-                  name="size"
-                  value="L"
-                />
-              </label>
-            </fieldset>
-          </li>
-        </ul>
-        <input class="modal__button" type="submit" value="Добавить" />
-      </form>
+      <div class="modal__fade"></div>
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form class="modal__form" action="/action_page.php" method="post">
+          <div class="modal__form-group">
+            <p class="modal__text">Выберите размер:</p>
+            <div class="modal__inner">
+              <fieldset class="modal__form-fieldset">
+                <label class="modal__form-label modal__form-label--text"
+                  >S
+                  <input
+                    class="modal__form-control modal__form-control--text"
+                    type="submit"
+                    name="size"
+                    value="S"
+                  />
+                </label>
+              </fieldset>
+              <fieldset class="modal__form-fieldset">
+                <label class="modal__form-label modal__form-label--text"
+                  >M
+                  <input
+                    class="modal__form-control modal__form-control--text"
+                    type="submit"
+                    name="size"
+                    value="M"
+                  />
+                </label>
+              </fieldset>
+              <fieldset class="modal__form-fieldset">
+                <label class="modal__form-label modal__form-label--text"
+                  >L
+                  <input
+                    class="modal__form-control modal__form-control--text"
+                    type="submit"
+                    name="size"
+                    value="L"
+                  />
+                </label>
+              </fieldset>
+            </div>
+          </div>
+          <input class="modal__button" type="submit" value="Добавить" />
+        </form>
+      </div>
     </div>
   </body>
 </html>

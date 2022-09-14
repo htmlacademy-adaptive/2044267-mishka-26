@@ -1,30 +1,9 @@
 .products {
-  color: #000000;
   background-color: #ffffff;
-  background-image: url("../img/main-page_hero.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-
-.products__wrapper {
-  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
-    padding: 0 50px;
+    position: relative;
   }
-
-  @media (min-width: @desktop-width) {
-    width: @desktop-width;
-  }
-}
-
-.products__title {
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 30px;
-  color: #000000;
-  text-align: center;
 }
 
 .products__list {
@@ -33,14 +12,106 @@
   line-height: 24px;
   color: #ffffff;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 668px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+  }
 }
 
-.products__item-interior {
+.products__link {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 24px 160px 31px 30px;
   color: #ffffff;
+  text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    width: 334px;
+    padding: 25px 36px 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+    padding: 25px 35px 34px 37px;
+  }
+}
+
+.products__link--interior {
   background-color: #63d1bb;
 }
 
-.products__item-toys {
-  color: #ffffff;
+.products__link--toys {
   background-color: #56c3b2;
+}
+
+.products__link--interior::after,
+.products__link--toys::after {
+  content: "";
+  position: absolute;
+  right: 36px;
+  top: 23px;
+  width: 41px;
+  height: 62px;
+  background-image: url(../img/interior.svg);
+  background-repeat: no-repeat;
+}
+
+.products__link--interior::after {
+  @media (min-width: @tablet-width) {
+    top: 30px;
+    right: 36px;
+  }
+}
+
+.products__link--toys::after {
+  right: 27px;
+  top: 21px;
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/toy.svg);
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    top: 31px;
+    right: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 31px;
+    right: 35px;
+  }
+}
+
+.products::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    top: 87%;
+    width: 100%;
+    height: 28px;
+    background-image: url(../img/zigzag.svg);
+    // background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    bottom: -9px;
+    height: 34px;
+  }
 }
