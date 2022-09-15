@@ -92,8 +92,6 @@
 
                   <img
                     class="catalog-products__image"
-                    width="260"
-                    height="195"
                     src="img/bunny-mob.jpg"
                     srcset="img/bunny-mob2x.jpg 2x"
                     alt="Зайчик"
@@ -144,8 +142,6 @@
                   />
                   <img
                     class="catalog-products__image"
-                    width="260"
-                    height="195"
                     src="img/basket-mob.jpg"
                     srcset="img/basket-mob2x.jpg 2x"
                     alt="Корзинка"
@@ -192,8 +188,6 @@
                   />
                   <img
                     class="catalog-products__image"
-                    width="260"
-                    height="195"
                     src="img/toys-mob.jpg"
                     srcset="img/toys-mob2x.jpg 2x"
                     alt="Игрушки"
@@ -236,13 +230,22 @@
             <h2 class="video__title">Процесс производства</h2>
           </div>
           <div class="video__player-container">
-            <img
-              class="video__play"
-              width="260"
-              height="150"
-              src="img/video.svg"
-              alt="Видео"
-            />
+            <picture>
+              <source
+                media="(min-width: 1150px)"
+                srcset="img/video-desktop.jpg 1x, img/video-desktop2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/video-tablet.jpg 1x, img/video-tablet2x.jpg 2x"
+              />
+              <img
+                class="video__play"
+                src="img/video-mobile.jpg"
+                srcset="img/video-mobile2x.jpg"
+                alt="Видео"
+              />
+            </picture>
             <button class="video__production-play" type="button">
               <span>
                 <img src="img/play.svg" alt="Play" />
