@@ -30,6 +30,24 @@
   }
 }
 
+.goods__zigzag::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    background-image: url(../img/zigzag-products.svg);
+    background-repeat: repeat-x;
+    background-position: 8px 0;
+    background-size: 320px 7px;
+    width: 1050px;
+    height: 24px;
+    background-position: 25px 0;
+    background-size: 1050px 24px;
+    position: absolute;
+    top: 100%;
+    display: block;
+    margin-top: 73px;
+  }
+}
+
 .goods__header {
   @media (min-width: @tablet-width) {
     display: flex;
