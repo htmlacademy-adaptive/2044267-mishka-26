@@ -73,7 +73,18 @@
 }
 
 .form__input {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 .form__label {
@@ -342,20 +353,6 @@
 
   @media (min-width: @tablet-width) {
     padding-right: 20px;
-  }
-}
-
-.form__input {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
-  color: #000000;
-
-  @media (min-width: @tablet-width) {
-    font-size: 19px;
-    line-height: 18px;
   }
 }
 
