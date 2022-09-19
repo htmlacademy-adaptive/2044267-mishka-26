@@ -9,6 +9,11 @@
     <link rel="icon" href="favicons.ico/32.svg" type="image/svg+xml" />
   </head>
   <body class="page__body">
+    <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+      <symbol viewBox="0 0 50 26" id="arrow-left"></symbol>
+      <symbol viewBox="0 0 50 26" id="arrow-right"></symbol>
+    </svg>
+
     <header class="main-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -250,6 +255,7 @@
                     d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z"
                     fill="#000"
                   />
+                  <use xlink:href="img/sprite.svg#arrow-left"></use>
                 </svg>
               </button>
               <button class="feedback-toggles__button" type="button">
@@ -264,6 +270,7 @@
                     d="M0 11h42.3l-8.1-8.2L37 0l13 13-13 13-2.8-2.8 8.1-8.2H0v-4Z"
                     fill="#000"
                   />
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
                 </svg>
               </button>
             </div>
