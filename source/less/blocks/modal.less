@@ -12,10 +12,10 @@
 
 .modal__wrapper {
   width: 100%;
-  // position: fixed;
+  position: fixed;
   top: 50%;
   left: 50%;
-  // display: none;
+  display: none;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -88,44 +88,51 @@
   justify-content: space-between;
 }
 
-.modal__form-fieldset {
+.modal__fieldset {
   display: inline-block;
   margin-right: 1px;
   border: 0;
   padding: 0;
 }
 
-.modal__form-label {
+.modal__input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  display: none;
+  border: 0;
+}
+
+.modal__label {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
   position: relative;
   display: inline-block;
+  text-align: center;
   padding: 18px 22px;
   min-width: 82px;
   min-height: 52px;
-  border: 2px solid #444444;
-  opacity: 0.1;
   border: 2px solid rgba(68, 68, 68, 0.1);
+  color: #444444;
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
     min-width: 112px;
   }
+
+  // &:hover
+
+  &:active {
+    border: #63d1bb;
+  }
 }
 
-.modal__form-label--text {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #444444;
-}
-
-.modal__form-control {
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  cursor: pointer;
+.modal__label:checked {
+  border: 2px solid #63d1bb;
 }
 
 .modal__button {

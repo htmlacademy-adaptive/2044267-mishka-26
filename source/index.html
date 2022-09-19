@@ -135,6 +135,20 @@
             <div class="goods__image-wrapper">
               <picture>
                 <source
+                  type="image/webp"
+                  media="(min-width: 1150px)"
+                  srcset="img/goods-desk.jpg 1x, img/goods-desk2x.jpg 2x"
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="img/goods-tablet.jpg 1x, img/goods-tablet2x.jpg 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcet="img/goods-mob.jpg 1x, img/goods-mob2x.jpg 2x"
+                />
+                <source
                   media="(min-width: 1150px)"
                   srcset="img/goods-desk.jpg 1x, img/goods-desk2x.jpg 2x"
                 />
@@ -288,13 +302,14 @@
           </table>
         </div>
         <div class="contacts__map-wrapper">
-          <div class="contacts__map">
+          <div class="contacts__map" id="yandex-map">
             <iframe
               src="https://yandex.ru/map-widget/v1/-/CCUVUOsPpD"
               width="560"
               height="457"
               frameborder="1"
               allowfullscreen="true"
+              frameborder="0"
             ></iframe>
           </div>
         </div>
@@ -312,8 +327,12 @@
           <a class="social__link social__link--tg" href="#"> </a>
         </div>
         <div class="copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru"
-            >Разработано
+          <a
+            class="copyright__link"
+            href="https://htmlacademy.ru"
+            aria-label="Сайт HTM Academy"
+          >
+            Разработано
           </a>
         </div>
       </div>
@@ -326,38 +345,32 @@
           <div class="modal__form-group">
             <p class="modal__text">Выберите размер:</p>
             <div class="modal__inner">
-              <fieldset class="modal__form-fieldset">
-                <label class="modal__form-label modal__form-label--text"
-                  >S
-                  <input
-                    class="modal__form-control modal__form-control--text"
-                    type="submit"
-                    name="size"
-                    value="S"
-                  />
-                </label>
+              <fieldset class="modal__fieldset">
+                <input
+                  class="modal__input"
+                  type="submit"
+                  name="size"
+                  value="S"
+                />
+                <label class="modal__label">S </label>
               </fieldset>
-              <fieldset class="modal__form-fieldset">
-                <label class="modal__form-label modal__form-label--text"
-                  >M
-                  <input
-                    class="modal__form-control modal__form-control--text"
-                    type="submit"
-                    name="size"
-                    value="M"
-                  />
-                </label>
+              <fieldset class="modal__fieldset">
+                <input
+                  class="modal__input"
+                  type="submit"
+                  name="size"
+                  value="M"
+                />
+                <label class="modal__label">M</label>
               </fieldset>
-              <fieldset class="modal__form-fieldset">
-                <label class="modal__form-label modal__form-label--text"
-                  >L
-                  <input
-                    class="modal__form-control modal__form-control--text"
-                    type="submit"
-                    name="size"
-                    value="L"
-                  />
-                </label>
+              <fieldset class="modal__fieldset">
+                <input
+                  class="modal__input"
+                  type="submit"
+                  name="size"
+                  value="L"
+                />
+                <label class="modal__label">L</label>
               </fieldset>
             </div>
           </div>
