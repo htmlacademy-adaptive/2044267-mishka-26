@@ -9,6 +9,10 @@
     <link rel="icon" href="favicons.ico/32.svg" type="image/svg+xml" />
   </head>
   <body class="page__body">
+    <!-- <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+      <symbol viewBox="0 0 25 24" id="phone"></symbol>
+      <symbol viewBox="0 0 32 21" id="mail"></symbol>
+    </svg> -->
     <header class="main-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -80,13 +84,13 @@
       </div>
       <!-- ФОРМА -->
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="container form__container">
+        <div class="form__container">
           <div class="form__type form__type--radio">
             <h2 class="form__title form__title--type">Тип</h2>
             <ul class="form__list">
               <li class="form__item">
                 <input
-                  class="form__radio-input"
+                  class="form__input--radio"
                   type="radio"
                   name="type"
                   value="Аксессуар для интерьера"
@@ -98,7 +102,7 @@
               </li>
               <li class="form__item">
                 <input
-                  class="form__radio-input"
+                  class="form__input--radio"
                   type="radio"
                   name="type"
                   value="Детская игрушка"
@@ -110,14 +114,14 @@
             </ul>
           </div>
         </div>
-        <div class="form__color">
-          <div class="container form__container">
-            <h2 class="form__title form__title--color">Цвет</h2>
+        <div class="form__type-wrapper">
+          <div class="form__container">
             <div class="form__type form__type--checkbox">
-              <ul class="form__list">
-                <li class="form__item">
+              <h2 class="form__title form__title--color">Цвет</h2>
+              <ul class="form__list form__list--color-wrapper">
+                <li class="form__item form__item--checkbox">
                   <input
-                    class="form__checkbox-input"
+                    class="form__input form__input--checkbox"
                     type="checkbox"
                     name="color"
                     value="white"
@@ -128,9 +132,9 @@
                     >Белый</label
                   >
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--checkbox">
                   <input
-                    class="form__checkbox-input"
+                    class="form__input form__input--checkbox"
                     type="checkbox"
                     name="color"
                     value="grey"
@@ -140,9 +144,9 @@
                     >Серый</label
                   >
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--checkbox">
                   <input
-                    class="form__checkbox-input"
+                    class="form__input form__input--checkbox"
                     type="checkbox"
                     name="color"
                     value="tiffani"
@@ -152,9 +156,9 @@
                     >Тиффани</label
                   >
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--checkbox">
                   <input
-                    class="form__checkbox-input"
+                    class="form__input form__input--checkbox"
                     type="checkbox"
                     name="color"
                     value="black"
@@ -164,9 +168,9 @@
                     >Черный</label
                   >
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--checkbox">
                   <input
-                    class="form__checkbox-input"
+                    class="form__input form__input--checkbox"
                     type="checkbox"
                     name="color"
                     value="pink"
@@ -176,9 +180,9 @@
                     >Розовый</label
                   >
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--checkbox">
                   <input
-                    class="form__checkbox-input"
+                    class="form__input form__input--checkbox"
                     type="checkbox"
                     name="color"
                     value="orange"
@@ -193,32 +197,32 @@
           </div>
         </div>
         <!-- ФИО -->
-        <div class="container form__container">
-          <h2 class="form__title form__title--data">ФИО</h2>
+        <div class="form__container">
           <div class="form__type form__type--name">
-            <ul class="form__list">
-              <li class="form__item">
+            <h2 class="form__title form__title--data">ФИО</h2>
+            <ul class="form__list form__list--data">
+              <li class="form__item form__item--data">
                 <label class="form__data">Имя:</label>
                 <input
-                  class="form__input form__input-name"
+                  class="form__input form__input--data"
                   type="text"
                   name="firstname"
                   placeholder="Введите ваше имя*"
                 />
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--data">
                 <label class="form__data">Фамилия:</label>
                 <input
-                  class="form__input form__input-lastname"
+                  class="form__input form__input--data"
                   type="text"
                   name="lastname"
                   placeholder="Введите вашу фамилию*"
                 />
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--data">
                 <label class="form__data">Отчество:</label>
                 <input
-                  class="form__input form__input-middlename"
+                  class="form__input form__input--data"
                   type="text"
                   name="middlename"
                   placeholder="Отчество, если желаете"
@@ -228,43 +232,39 @@
           </div>
         </div>
         <!-- ТЕЛЕФОН -->
-        <div class="form__contacts">
-          <div class="container form__container">
-            <div class="form__type form__type--phone">
-              <label class="form__title form__title--tel"
-                >ТЕЛ
-                <input
-                  class="form__input form__input-phone"
-                  type="tel"
-                  name="tel"
-                  placeholder="+7 XXX XX XX*"
-                />
-              </label>
+        <div class="form__type-wrapper">
+          <div class="form__container">
+            <div class="form__type form__type--contacts">
+              <label class="form__title form__title--tel">ТЕЛ</label>
+              <input
+                class="form__input form__input--tel"
+                type="tel"
+                name="tel"
+                placeholder="+7 XXX XX XX*"
+              />
+              <svg class="form__icon form__icon--tel" width="25" height="24">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
             </div>
-          </div>
-        </div>
-        <!-- EMAIL -->
-        <div class="form__contacts">
-          <div class="container form__container">
-            <div class="form__type form__type--mail">
-              <label class="form__title form__title--mail"
-                >E-MAIL
-                <input
-                  class="form__input form__input-mail"
-                  type="email"
-                  name="email"
-                  placeholder="Ваш Email*"
-                />
-              </label>
+            <!-- EMAIL -->
+            <div class="form__type form__type--contacts">
+              <label class="form__title form__title--mail">E-MAIL</label>
+              <input
+                class="form__input form__input--mail"
+                type="email"
+                name="email"
+                placeholder="Ваш Email*"
+              />
+              <svg class="form__icon form__icon--mail" width="32" height="21">
+                <use xlink:href="img/sprite.svg#mail"></use>
+              </svg>
             </div>
           </div>
         </div>
         <!-- ПОЛЕ ВВОДА -->
-        <div class="container form__container">
+        <div class="form__container">
           <div class="form__type form__type--textarea">
-            <label class="form__title form__title--add" for="comment-field"
-              >ДОП</label
-            >
+            <label class="form__title" for="comment-field">ДОП</label>
             <textarea
               class="form__comment-field"
               name="comment"
@@ -276,19 +276,20 @@
 Опишите все ваши пожелания к заказу
               </textarea
             >
-            <p class="form__text">*Поля обязательны для заполнения</p>
           </div>
-        </div>
-        <div class="container form__container">
-          <div class="form__submit form__type--button">
-            <input class="form__button" type="submit" value="Отправить заказ" />
+          <div class="form__footer">
+            <span class="form__text">*Поля обязательны для заполнения</span>
+            <input
+              class="form__button button"
+              type="submit"
+              value="Отправить заказ"
+            />
           </div>
         </div>
       </form>
     </main>
     <!-- КОНЕЦ ФОРМЫ -->
     <footer class="main-footer">
-      <!-- <div class="container"> -->
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
           <a class="main-footer__logo-link" href="index.html"></a>
@@ -304,7 +305,6 @@
           </a>
         </div>
       </div>
-      <!-- </div> -->
     </footer>
   </body>
 </html>
