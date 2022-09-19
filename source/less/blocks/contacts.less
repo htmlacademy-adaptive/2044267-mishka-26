@@ -12,6 +12,11 @@
     max-width: 1150px;
     margin: auto auto 105px;
   }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .contacts__wrapper {
@@ -59,7 +64,7 @@
     right: -5px;
     width: 47px;
     height: 81px;
-    background-image: url(../img/flag.svg);
+    background-image: url("../img/flag.svg");
   }
 
   @media (min-width: @desktop-width) {
@@ -177,14 +182,14 @@
 
 .contacts__map {
   height: 457px;
-  background-image: url(../img/map-pin.svg) 125px 170px;
+  background-image: url("../img/map-pin.svg") 125px 170px;
   background-repeat: no-repeat;
   box-shadow: none;
   border: none;
 
   @media (min-width: @tablet-width) {
     height: 457px;
-    background-image: url(../img/map-pin.svg);
+    // background-image: url(../img/map-pin.svg);
   }
 
   @media (min-width: @desktop-width) {
@@ -195,12 +200,12 @@
   }
 }
 
-.contacts {
-  iframe {
-    width: 100%;
-    height: 100%;
-  }
-}
+// .contacts {
+//   iframe {
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
 
 .contacts-button__write-us {
   font-weight: 700;
