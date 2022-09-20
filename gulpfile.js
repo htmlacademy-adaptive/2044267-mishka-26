@@ -4,6 +4,8 @@ import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
+
 
 // Styles
 
@@ -16,6 +18,13 @@ export const styles = () => {
     ]))
     .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
+}
+
+//HTML
+export const html = () => {
+  return gulp.src('source/*.html')
+  .pipe(htmlmin( options: { collapseWhitespace: true }))
+  .pipe(gulp.dest('source'));
 }
 
 // Server

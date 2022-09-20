@@ -34,8 +34,8 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
+  color: #62d1ba;
   text-transform: uppercase;
-  color: #63d1bb;
   position: relative;
   display: inline-block;
   margin-bottom: 21px;
@@ -43,12 +43,28 @@
   @media (min-width: @tablet-width) {
     width: 167px;
     margin-top: 19px;
-    // float: left;
+    text-align: left;
+    float: left;
   }
 
   @media (min-width: @desktop-width) {
     width: 175px;
     padding-right: 11px;
+    text-align: center;
+  }
+}
+
+.form__title::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 62px;
+  width: 200px;
+  height: 1px;
+  background-color: #62d1ba;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -60,11 +76,6 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    // flex-direction: column;
-  }
-
-  @media (min-width: @desktop-width) {
-    // flex-direction: column;
   }
 }
 
@@ -111,6 +122,13 @@
   }
 }
 
+.form__input--radio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+
 .form__label--radio {
   padding: 14px 30px 10px 63px;
 
@@ -136,6 +154,10 @@
   }
 }
 
+.form__input--radio:checked + .form__label--radio::after {
+  display: block;
+}
+
 .form__label--radio::after {
   content: "";
   position: absolute;
@@ -154,20 +176,6 @@
     height: 22px;
   }
 }
-
-// .form__title--type::before,
-// .form__title--color::before,
-// .form__title--data::before,
-// .form__title--tel::before,
-// .form__title--mail::before {
-//   content: "";
-//   position: absolute;
-//   top: 8px;
-//   left: 50px;
-//   width: 200px;
-//   height: 1px;
-//   background-color: #62d1ba;
-// }
 
 // ЦВЕТ
 
@@ -258,10 +266,10 @@
   }
 }
 
-// .form__input--checkbox:checked,
-// .form__label--checkbox::after {
-//   display: block;
-// }
+.form__input--checkbox:checked,
+.form__label--checkbox::after {
+  display: block;
+}
 
 // ФИО
 
@@ -411,6 +419,14 @@
 }
 
 // ДОП
+
+.form__container--more {
+  padding-bottom: 55px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 50px;
+  }
+}
 
 .form__type--textarea {
   display: flex;
