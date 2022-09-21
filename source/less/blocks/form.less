@@ -27,9 +27,9 @@
   }
 }
 
-.form__type:last-of-type {
-  margin-bottom: 0;
-}
+// .form__type:last-of-type {
+//   margin-bottom: 0;
+// }
 
 .form__title {
   font-weight: 700;
@@ -77,6 +77,10 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: @tablet-width) and (min-width: @desktop-width) {
+    flex-direction: column;
   }
 }
 
@@ -182,10 +186,21 @@
 
 // ЦВЕТ
 
+// .form__title--color {
+//   @media (min-width: @desktop-width) {
+//     width: 200px;
+//   }
+// }
+
 .form__type--checkbox {
   @media (min-width: @tablet-width) {
     padding-bottom: 30px;
   }
+
+  // @media (min-width: @desktop-width) {
+  //   width: 800px;
+  //   text-align: left;
+  // }
 }
 
 .form__list--color-wrapper {
@@ -195,7 +210,8 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    justify-content: flex-start;
+    // justify-content: flex-start;
+    width: 745px;
   }
 }
 
@@ -204,15 +220,33 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 22px;
+    margin-right: 40px;
+    width: 220px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.form__item--checkbox:nth-child(even) {
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.form__item--checkbox:nth-child(3n) {
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
   }
 }
 
 .form__list--color-wrapper,
 .form__item--checkbox {
-  width: 48%;
+  // width: 48%;
 
   @media (min-width: @desktop-width) {
-    width: 30%;
+    // width: 30%;
   }
 }
 
@@ -279,6 +313,10 @@
   @media (min-width: @tablet-width) {
     padding-top: 47px;
     padding-bottom: 49px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 10px;
   }
 }
 
@@ -438,11 +476,12 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     margin-top: 0;
-    padding-top: 45px;
+    padding-top: 5px;
   }
 
   @media (min-width: @desktop-width) {
     justify-content: flex-start;
+    // padding-top: 31px;
   }
 }
 
