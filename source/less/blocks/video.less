@@ -1,7 +1,15 @@
 .video {
   color: #000000;
   background-color: #ffffff;
-  margin-bottom: 105px;
+  margin-bottom: 62px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 112px;
+  }
 }
 
 .video__wrapper {
@@ -18,15 +26,16 @@
 
 .video__title-wpapper {
   position: relative;
-  padding: 22px 13px 27px 91px;
+  padding: 7px 1px 14px 91px;
 
   @media (min-width: @tablet-width) {
     padding-left: 107px;
+    padding-bottom: 4px;
   }
 
   @media (min-width: @desktop-width) {
     width: 367px;
-    padding: 96px 110px 0px 79px;
+    padding: 92px 92px 0 79px;
   }
 }
 
@@ -42,12 +51,12 @@
   background-position: center;
 
   @media (min-width: @tablet-width) {
-    top: 39px;
+    top: 21px;
     left: 42px;
   }
 
   @media (min-width: @desktop-width) {
-    top: 47px;
+    top: 43px;
     left: 79px;
   }
 }
@@ -93,19 +102,19 @@
 
 .video__production-play {
   position: absolute;
-  top: 25%;
-  left: 30%;
+  top: 22%;
+  left: 28%;
   background: 0 0;
   border: 0;
 
   @media (min-width: @tablet-width) {
-    top: 40%;
-    left: 40%;
+    top: 36%;
+    left: 42%;
   }
 
   @media (min-width: @desktop-width) {
     top: 40%;
-    left: 40%;
+    left: 42%;
   }
 }
 
@@ -119,7 +128,7 @@
 
   @media (min-width: @desktop-width) {
     width: 367px;
-    padding: 27px 36px 51px 79px;
+    padding: 20px 36px 51px 79px;
   }
 }
 
@@ -128,13 +137,13 @@
   font-size: 13px;
   line-height: 24px;
   color: #444444;
-  margin: 16px 0 41px;
+  margin: 19px 0 17px;
 
   @media (min-width: @tablet-width) {
     font-size: 15px;
     line-height: 30px;
     margin-top: 8px;
-    margin-bottom: 41px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: @desktop-width) {
@@ -154,7 +163,7 @@
   border: 2px solid #444444;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    width: 96%;
   }
 
   @media (min-width: @desktop-width) {
