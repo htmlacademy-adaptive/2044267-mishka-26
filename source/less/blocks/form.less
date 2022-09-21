@@ -11,7 +11,8 @@
 
 .form__type {
   position: relative;
-  margin: 33px 0 0;
+  // margin: 33px 0 0;
+  margin: 14px 0 0;
   padding: 0;
   border: 0;
 
@@ -26,29 +27,45 @@
   }
 }
 
-.form__type:last-of-type {
-  margin-bottom: 0;
-}
+// .form__type:last-of-type {
+//   margin-bottom: 0;
+// }
 
 .form__title {
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
+  color: #62d1ba;
   text-transform: uppercase;
-  color: #63d1bb;
   position: relative;
   display: inline-block;
-  margin-bottom: 21px;
+  // margin-bottom: 21px;
 
   @media (min-width: @tablet-width) {
     width: 167px;
     margin-top: 19px;
-    // float: left;
+    text-align: left;
+    float: left;
   }
 
   @media (min-width: @desktop-width) {
     width: 175px;
     padding-right: 11px;
+    text-align: center;
+  }
+}
+
+.form__title::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 62px;
+  width: 200px;
+  height: 1px;
+  background-color: #62d1ba;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -60,11 +77,10 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    // flex-direction: column;
   }
 
-  @media (min-width: @desktop-width) {
-    // flex-direction: column;
+  @media (min-width: @tablet-width) and (min-width: @desktop-width) {
+    flex-direction: column;
   }
 }
 
@@ -106,13 +122,22 @@
 // ТИП
 
 .form__title--type {
+  margin: 0;
+
   @media (min-width: @tablet-width) {
     margin-top: 25px;
   }
 }
 
+.form__input--radio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+
 .form__label--radio {
-  padding: 14px 30px 10px 63px;
+  padding: 30px 0 14px 58px;
 
   @media (min-width: @tablet-width) {
     padding: 22px 30px 35px 81px;
@@ -136,6 +161,10 @@
   }
 }
 
+.form__input--radio:checked + .form__label--radio::after {
+  display: block;
+}
+
 .form__label--radio::after {
   content: "";
   position: absolute;
@@ -155,26 +184,23 @@
   }
 }
 
-// .form__title--type::before,
-// .form__title--color::before,
-// .form__title--data::before,
-// .form__title--tel::before,
-// .form__title--mail::before {
-//   content: "";
-//   position: absolute;
-//   top: 8px;
-//   left: 50px;
-//   width: 200px;
-//   height: 1px;
-//   background-color: #62d1ba;
-// }
-
 // ЦВЕТ
+
+// .form__title--color {
+//   @media (min-width: @desktop-width) {
+//     width: 200px;
+//   }
+// }
 
 .form__type--checkbox {
   @media (min-width: @tablet-width) {
     padding-bottom: 30px;
   }
+
+  // @media (min-width: @desktop-width) {
+  //   width: 800px;
+  //   text-align: left;
+  // }
 }
 
 .form__list--color-wrapper {
@@ -184,7 +210,8 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    justify-content: flex-start;
+    // justify-content: flex-start;
+    width: 745px;
   }
 }
 
@@ -193,15 +220,33 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 22px;
+    margin-right: 40px;
+    width: 220px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.form__item--checkbox:nth-child(even) {
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.form__item--checkbox:nth-child(3n) {
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
   }
 }
 
 .form__list--color-wrapper,
 .form__item--checkbox {
-  width: 48%;
+  // width: 48%;
 
   @media (min-width: @desktop-width) {
-    width: 30%;
+    // width: 30%;
   }
 }
 
@@ -258,10 +303,9 @@
   }
 }
 
-// .form__input--checkbox:checked,
-// .form__label--checkbox::after {
-//   display: block;
-// }
+.form__input--checkbox:checked + .form__label--checkbox::after {
+  display: block;
+}
 
 // ФИО
 
@@ -269,6 +313,10 @@
   @media (min-width: @tablet-width) {
     padding-top: 47px;
     padding-bottom: 49px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 10px;
   }
 }
 
@@ -412,6 +460,14 @@
 
 // ДОП
 
+.form__container--more {
+  padding-bottom: 55px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 50px;
+  }
+}
+
 .form__type--textarea {
   display: flex;
   flex-direction: column;
@@ -420,11 +476,12 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     margin-top: 0;
-    padding-top: 45px;
+    padding-top: 5px;
   }
 
   @media (min-width: @desktop-width) {
     justify-content: flex-start;
+    // padding-top: 31px;
   }
 }
 

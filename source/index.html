@@ -4,17 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="favicon.ico/32.png" />
     <link rel="icon" href="favicons.ico/32.svg" type="image/svg+xml" />
   </head>
   <body class="page__body">
-    <!-- <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
-      <symbol viewBox="0 0 50 26" id="arrow-left"></symbol>
-      <symbol viewBox="0 0 50 26" id="arrow-right"></symbol>
-    </svg> -->
     <header class="main-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <!-- для состояния открытого меню класс main-nav--opened -->
+      <!-- для состояния закрытого меню класс main-nav--closed  -->
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -83,14 +81,18 @@
         <ul class="products__list">
           <li class="products__item">
             <a class="products__link products__link--interior" href="#"
-              >Предметы<br />
-              интерьера</a
+              ><span class="products__text">
+                Предметы<br />
+                интерьера
+              </span></a
             >
           </li>
           <li class="products__item">
             <a class="products__link products__link--toys" href="#"
-              >Детские<br />
-              игрушки</a
+              ><span class="products__text">
+                Детские<br />
+                игрушки
+              </span></a
             >
           </li>
         </ul>
@@ -244,28 +246,12 @@
             <div class="feedback__toggles feedback-toggles">
               <button class="feedback-toggles__button" type="button">
                 <svg width="50" height="26">
-                  <!-- viewBox="0 0 50 26"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                > -->
-                  <!-- <path
-                    d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z"
-                    fill="#000"
-                  /> -->
-                  <use xlink:href="img/sprite.svg#arrow-left"></use>
+                  <use xlink:href="img/icons/sprite.svg#arrow-left"></use>
                 </svg>
               </button>
               <button class="feedback-toggles__button" type="button">
                 <svg width="50" height="26">
-                  <!-- viewBox="0 0 50 26"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                > -->
-                  <!-- <path
-                    d="M0 11h42.3l-8.1-8.2L37 0l13 13-13 13-2.8-2.8 8.1-8.2H0v-4Z"
-                    fill="#000"
-                  /> -->
-                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  <use xlink:href="img/icons/sprite.svg#arrow-right"></use>
                 </svg>
               </button>
             </div>

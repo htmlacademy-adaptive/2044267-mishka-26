@@ -22,6 +22,14 @@
   // }
 }
 
+.main-nav--closed {
+  .main-nav__menu-list {
+    @media (max-width: @mobile-width-only) {
+      display: none;
+    }
+  }
+}
+
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -37,24 +45,29 @@
   }
 }
 
-.main-nav--opened .main-nav__toggle::after {
-  transform: rotate (-45deg);
-}
-
 .main-nav--opened .main-nav__toggle::after,
 .main-nav--opened .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 11px;
-  right: -2px;
-  width: 27px;
-  height: 3px;
-  background-color: #221f1f;
+  @media (max-width: @mobile-width-only) {
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: -2px;
+    width: 27px;
+    height: 3px;
+    background-color: #221f1f;
+    transform: rotate(-45deg);
+  }
 }
 
-// .main-nav--nojs .main-nav__toggle {
-//   display: ;
-// }
+.main-nav--opened .main-nav__toggle::after {
+  @media (max-width: @mobile-width-only) {
+    transform: rotate(45deg);
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
 
 .main-nav__inner {
   display: flex;
@@ -152,12 +165,12 @@
 
 .main-nav__menu-item--main {
   @media (min-width: @tablet-width) {
-    padding: 17px 0 0;
+    padding: 20px 0 0;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    padding: 30px 0 35px;
+    padding: 33px 0 35px;
   }
 }
 
@@ -176,7 +189,7 @@
 
 .main-nav__menu-item--user {
   @media (min-width: @tablet-width) {
-    padding: 30px 0 35px 83px;
+    padding: 33px 0 35px 83px;
     border-left: 1px solid #ececec;
   }
 }
@@ -190,7 +203,7 @@
 .main-nav__link--search::before {
   content: "";
   position: absolute;
-  top: 30px;
+  top: 34px;
   left: 32px;
   width: 19px;
   height: 19px;
@@ -201,7 +214,7 @@
 .main-nav__link--cart::before {
   content: "";
   position: absolute;
-  top: 29px;
+  top: 35px;
   left: 31px;
   width: 22px;
   height: 19px;
@@ -236,5 +249,10 @@
     display: block;
     font-size: 15px;
     line-height: 24px;
+    padding-top: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 17px;
   }
 }
