@@ -93,9 +93,10 @@
                   type="radio"
                   name="type"
                   value="Аксессуар для интерьера"
+                  id="accessory"
                   checked
                 />
-                <label class="form__label form__label--radio"
+                <label class="form__label form__label--radio" for="accessory"
                   >Аксессуар для интерьера</label
                 >
               </li>
@@ -104,9 +105,10 @@
                   class="form__input--radio"
                   type="radio"
                   name="type"
+                  id="toy"
                   value="Детская игрушка"
                 />
-                <label class="form__label form__label--radio"
+                <label class="form__label form__label--radio" for="toy"
                   >Детская игрушка</label
                 >
               </li>
@@ -137,6 +139,7 @@
                     type="checkbox"
                     name="color"
                     value="grey"
+                    id="grey"
                     checked
                   />
                   <label class="form__label form__label--checkbox" for="grey"
@@ -149,7 +152,7 @@
                     type="checkbox"
                     name="color"
                     value="tiffani"
-                    id="grey"
+                    id="tiffani"
                   />
                   <label class="form__label form__label--checkbox" for="tiffani"
                     >Тиффани</label
@@ -161,7 +164,7 @@
                     type="checkbox"
                     name="color"
                     value="black"
-                    id="tiffani"
+                    id="black"
                   />
                   <label class="form__label form__label--checkbox" for="black"
                     >Черный</label
@@ -201,29 +204,32 @@
             <h2 class="form__title form__title--data">ФИО</h2>
             <ul class="form__list form__list--data">
               <li class="form__item form__item--data">
-                <label class="form__data">Имя:</label>
+                <label class="form__data" for="name">Имя:</label>
                 <input
                   class="form__input form__input--data"
                   type="text"
                   name="firstname"
+                  id="name"
                   placeholder="Введите ваше имя*"
                 />
               </li>
               <li class="form__item form__item--data">
-                <label class="form__data">Фамилия:</label>
+                <label class="form__data" for="lastname">Фамилия:</label>
                 <input
                   class="form__input form__input--data"
                   type="text"
                   name="lastname"
+                  id="lastname"
                   placeholder="Введите вашу фамилию*"
                 />
               </li>
               <li class="form__item form__item--data">
-                <label class="form__data">Отчество:</label>
+                <label class="form__data" for="middlename">Отчество:</label>
                 <input
                   class="form__input form__input--data"
                   type="text"
                   name="middlename"
+                  id="middlename"
                   placeholder="Отчество, если желаете"
                 />
               </li>
@@ -234,11 +240,12 @@
         <div class="form__type-wrapper">
           <div class="form__container">
             <div class="form__type form__type--contacts">
-              <label class="form__title form__title--tel">ТЕЛ</label>
+              <label class="form__title form__title--tel" for="tel">ТЕЛ</label>
               <input
                 class="form__input form__input--tel"
                 type="tel"
                 name="tel"
+                id="tel"
                 placeholder="+7 XXX XX XX*"
               />
               <svg class="form__icon form__icon--tel" width="25" height="24">
@@ -247,11 +254,12 @@
             </div>
             <!-- EMAIL -->
             <div class="form__type form__type--contacts">
-              <label class="form__title form__title--mail">E-MAIL</label>
+              <label class="form__title form__title--mail" for="mail">E-MAIL</label>
               <input
                 class="form__input form__input--mail"
                 type="email"
                 name="email"
+                id="mail"
                 placeholder="Ваш Email*"
               />
               <svg class="form__icon form__icon--mail" width="32" height="21">
@@ -294,12 +302,12 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
-          <a class="main-footer__logo-link" href="index.html"></a>
+          <a class="main-footer__logo-link" href="index.html">Мишка</a>
         </div>
         <div class="social">
-          <a class="social__link social__link--vk" href="#"> </a>
-          <a class="social__link social__link--yt" href="#"> </a>
-          <a class="social__link social__link--tg" href="#"> </a>
+          <a class="social__link social__link--vk" href="#">ВКонтакте</a>
+          <a class="social__link social__link--yt" href="#">Youtube</a>
+          <a class="social__link social__link--tg" href="#">Telegram</a>
         </div>
         <div class="copyright">
           <a class="copyright__link" href="https://htmlacademy.ru"

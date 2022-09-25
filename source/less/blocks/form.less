@@ -138,9 +138,6 @@
     padding: 22px 30px 35px 81px;
     margin-right: 25px;
   }
-
-  @media (min-width: @desktop-width) {
-  }
 }
 
 .form__label--radio::before {
@@ -425,12 +422,16 @@
 
 .form__icon {
   position: absolute;
-  top: 32px;
   right: 8px;
 
   @media (min-width: @tablet-width) {
     top: 61px;
     right: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 70px;
+    right: 200px;
   }
 }
 
@@ -440,6 +441,10 @@
   @media (min-width: @tablet-width) {
     top: 15px;
     right: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 195px;
   }
 }
 
